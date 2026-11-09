@@ -1,0 +1,76 @@
+name: 發布日本雪場
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 每 3 小時更新一次，避開整點，減少和其他排程擠在一起。
+    - cron: "20 */3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 更新雪況
+        if: github.event_name != 'push'
+        run: python scripts/fetch_conditions.py
+
+      - name: 檢查資料
+        run: python scripts/check_data.py
+
+      - name: 把新雪況提交回 main
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/conditions.json
+          if git diff --cached --quiet; then
+            echo "雪況沒有變化"
+          else
+            git commit -m "$(cat <<'EOF'
+更新積雪資料
+
+Co-authored-by: Grok Bot <grokbot@evanhome.local>
+EOF
+)"
+            git push origin HEAD:main
+          fi
+
+      - name: 整理靜態檔
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          cp index.html favicon.svg _site/
+          cp -r assets data _site/
+          touch _site/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

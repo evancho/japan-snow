@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="用繁體中文看日本滑雪場的積雪、24 與 48 小時新雪、氣溫，以及未來幾天的降雪預報。">
+  <meta name="theme-color" content="#0c6d82">
+  <meta property="og:title" content="日本雪場｜積雪與降雪預報">
+  <meta property="og:description" content="繁體中文的日本雪場雪況。可搜尋中文、日文、英文，並用地區篩選。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evancho.github.io/japan-snow/">
+  <title>日本雪場｜積雪與降雪預報</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="app">
+    <section class="list-pane" id="list-pane">
+      <header class="top">
+        <a class="brand" href="#/">
+          <span class="mark" aria-hidden="true">雪</span>
+          <span>
+            <span class="brand-name">日本雪場</span>
+            <span class="brand-sub">積雪、新雪、這幾天的降雪</span>
+          </span>
+        </a>
+      </header>
+      <div class="tools">
+        <label class="search">
+          <span class="sr">搜尋雪場</span>
+          <input id="q" type="search" enterkeyhint="search" autocomplete="off" placeholder="搜尋雪場，中文、日文、英文都可以" autocapitalize="off">
+        </label>
+        <div class="regions" id="regions" role="tablist" aria-label="地區"></div>
+        <div class="sort-row">
+          <label class="sort">
+            <span>排序</span>
+            <select id="sort">
+              <option value="depth">積雪深度</option>
+              <option value="d24">24 小時新雪</option>
+              <option value="d48">48 小時新雪</option>
+              <option value="fc3">未來 3 日預報</option>
+              <option value="name">名稱</option>
+            </select>
+          </label>
+          <p id="count" class="count" aria-live="polite">正在讀取雪況…</p>
+        </div>
+      </div>
+      <p class="fineprint">估計來自 Open-Meteo，實測來自氣象廳。完整出處在頁尾。</p>
+      <div id="season" class="season" hidden></div>
+      <div id="list" class="list"></div>
+      <footer class="colophon" id="colophon"></footer>
+    </section>
+    <section class="detail-pane" id="detail" aria-live="polite"></section>
+  </div>
+  <noscript><p class="noscript">這個頁面需要 JavaScript 才能顯示雪況。</p></noscript>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
