@@ -49,12 +49,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "雪況沒有變化"
           else
-            git commit -m "$(cat <<'EOF'
-更新積雪資料
-
-Co-authored-by: Grok Bot <grokbot@evanhome.local>
-EOF
-)"
+            git commit -m "更新積雪資料" -m "Co-authored-by: Grok Bot <grokbot@evanhome.local>"
             git push origin HEAD:main
           fi
 
