@@ -1,4 +1,4 @@
-const APP_VERSION = "1.1.0";
+const APP_VERSION = "1.1.1";
 const FKEY = "jp-snow-favs";
 const SKIP_KEY = "jp-snow-skip-version";
 const CHECK_MS = 15 * 60 * 1000;

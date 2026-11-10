@@ -346,7 +346,8 @@
     "note": "赤倉觀光與赤倉溫泉共通，成人與中學生。"
    },
    "links": {
-    "ticket": "https://akr-ski.com/slope/"
+    "ticket": "https://akr-ski.com/slope/",
+    "status": "https://akr-ski.com/slope/#liftOperationStatus"
    }
   },
   {
@@ -700,6 +701,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 9,
     "lifts": 5
+   },
+   "ticket": {
+    "jpy": 7777,
+    "season": "2026-27 ハイシーズン（2026-12-12–2027-03-21）",
+    "label": "成人一日券（エコノミークラス、19–49 歲）",
+    "source": "https://www.lottehotel.com/arai-resort/ja/snow/ski-lift/economy-class",
+    "as_of": "2026-11-10",
+    "note": "50 歲以上 7,300、子ども（7–18 歲）5,555；ファーストクラス（8:00 起優先乘車）12,777；スプリング季較低。"
+   },
+   "links": {
+    "ticket": "https://www.lottehotel.com/arai-resort/ja/snow/ski-lift/economy-class"
    }
   },
   {
@@ -823,6 +835,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 4,
     "lifts": 1
+   },
+   "ticket": {
+    "jpy": 2800,
+    "season": "2026-27 シーズン（11/1–5/31）",
+    "label": "成人纜車來回券（該場沒有 lift 一日券）",
+    "source": "https://asahidake.hokkaido.jp/ja/",
+    "as_of": "2026-11-10",
+    "note": "旭岳雪道自由滑、只收大雪山纜車費用；トップシーズン（6/1–10/31）3,500、片道 1,700。"
+   },
+   "links": {
+    "ticket": "https://asahidake.hokkaido.jp/ja/#SCHEDULE"
    }
   },
   {
@@ -1125,7 +1148,8 @@
     "note": "含纜車往返與雪道。預售有較低的區間價。"
    },
    "links": {
-    "ticket": "https://www.biwako-valley.com/w_season/hours_fare_winter/"
+    "ticket": "https://www.biwako-valley.com/w_season/hours_fare_winter/",
+    "status": "https://www.biwako-valley.com/#top-today-s"
    }
   },
   {
@@ -2271,7 +2295,8 @@
     "note": "一般窗口。初滑與春雪是 7,500 円。"
    },
    "links": {
-    "ticket": "https://www.princehotels.co.jp/ski/furano/winter/lift/"
+    "ticket": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+    "status": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/"
    }
   },
   {
@@ -2376,7 +2401,8 @@
     "note": "網頁價是 7,500 円。"
    },
    "links": {
-    "ticket": "https://gala.co.jp/winter/hours-pricing/"
+    "ticket": "https://gala.co.jp/winter/hours-pricing/",
+    "status": "https://gala.co.jp/winter/gelande/"
    }
   },
   {
@@ -2641,6 +2667,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 13,
     "lifts": 5
+   },
+   "ticket": {
+    "jpy": 5500,
+    "season": "2026-27 オンシーズン（12/12–3/22）土日祝",
+    "label": "成人一日券（土日祝）",
+    "source": "https://grandecoresort.co.jp/snow/",
+    "as_of": "2026-11-10",
+    "note": "平日 4,300；プレシーズン（11/21–12/11）4,300；スプリング（3/23–4/11）4,300；大人＝13–49 歲、シニア（50+）土日祝 4,800；午後券 4,400。"
+   },
+   "links": {
+    "ticket": "https://grandecoresort.co.jp/snow/",
+    "status": "https://grandecoresort.co.jp/snow/course/"
    }
   },
   {
@@ -3096,6 +3134,9 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 2,
     "lifts": 3
+   },
+   "links": {
+    "ticket": "https://www.hakkouda-p.com/cn21/pg110.html"
    }
   },
   {
@@ -3194,7 +3235,8 @@
     "note": "這筆含可退的 IC 卡保證金 500 円。早割與春雪是 8,500 円。"
    },
    "links": {
-    "ticket": "https://hakuba47.co.jp/ja/lift-tickets/"
+    "ticket": "https://hakuba47.co.jp/ja/lift-tickets/",
+    "status": "https://hakuba47.co.jp/ja/mountain-report/"
    }
   },
   {
@@ -3226,6 +3268,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 13,
     "lifts": 7
+   },
+   "ticket": {
+    "jpy": 6500,
+    "season": "2026-27 冬（白馬乘鞍×コルチナ共通；營業期間未公布）",
+    "label": "成人一日券（白馬乘鞍コルチナ共通）",
+    "source": "https://www.hakunori.com/ticket/",
+    "as_of": "2026-11-10",
+    "note": "共通 4小時券 5,800；コルチナ不能使用夜間纜車；身障優惠 5,500。"
+   },
+   "links": {
+    "ticket": "https://www.hakunori.com/ticket/",
+    "status": "https://www.hakunori.com/condition/"
    }
   },
   {
@@ -3349,6 +3403,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 7,
     "lifts": 9
+   },
+   "ticket": {
+    "jpy": 7000,
+    "season": "官網價目表仍是 2025-26 窗口（2025-12-19–2026-03-29）；26-27 為 2026-12-18–2027-03-28、通常價未更新",
+    "label": "成人一日券（當日窗口）",
+    "source": "https://iwatake-mountain-resort.com/rates/",
+    "as_of": "2026-11-10",
+    "note": "26-27 早割リフト券 10/25 起販售；前季 WEB 早割 5,800 起。7,000 是官網目前掛的視窗價，開季前會更新。"
+   },
+   "links": {
+    "ticket": "https://iwatake-mountain-resort.com/rates/",
+    "status": "https://iwatake-mountain-resort.com/winter/course_lift/"
    }
   },
   {
@@ -3974,7 +4040,8 @@
     "note": "平日一日券是 7,100 円。"
    },
    "links": {
-    "ticket": "https://hodaigi.jp/lift-price/"
+    "ticket": "https://hodaigi.jp/lift-price/",
+    "status": "https://hodaigi.jp/gelande-guide/"
    }
   },
   {
@@ -4381,7 +4448,8 @@
     "note": "一般訪客。粉絲俱樂部平日另有優惠。"
    },
    "links": {
-    "ticket": "https://www.inawashiro-ski.com/lift/"
+    "ticket": "https://www.inawashiro-ski.com/lift/",
+    "status": "https://www.inawashiro-ski.com/information/"
    }
   },
   {
@@ -4543,7 +4611,8 @@
     "note": "整日窗口。彈性時間一日券窗口是 8,500 円。"
    },
    "links": {
-    "ticket": "https://ishiuchi.or.jp/winter/price/"
+    "ticket": "https://ishiuchi.or.jp/winter/price/",
+    "status": "https://ishiuchi.or.jp/winter/news/"
    }
   },
   {
@@ -5188,7 +5257,8 @@
     "note": "成人欄。另收可退的卡費 500 円。"
    },
    "links": {
-    "ticket": "https://www.kamui-skilinks.com/guide/"
+    "ticket": "https://www.kamui-skilinks.com/guide/",
+    "status": "https://www.kamui-skilinks.com/today/"
    }
   },
   {
@@ -5266,6 +5336,14 @@
    "links": {
     "ticket": "https://www.kandatsu.com/price/",
     "status": "https://www.kandatsu.com/today/"
+   },
+   "ticket": {
+    "jpy": 6800,
+    "season": "2026-27 トップシーズン（2026-12-19–2027-03-28）土曜・特定日",
+    "label": "成人一日券（土曜・特定日）",
+    "source": "https://www.kandatsu.com/price/",
+    "as_of": "2026-11-10",
+    "note": "平日・日曜・祝日・正月 5,800；子ども 4,000；プレシーズン 12/11–12/18。"
    }
   },
   {
@@ -5476,7 +5554,8 @@
     "note": "平日一日券。"
    },
    "links": {
-    "ticket": "https://www.kawaba.co.jp/lift-prices/"
+    "ticket": "https://www.kawaba.co.jp/lift-prices/",
+    "status": "https://www.kawaba.co.jp/gelande/#lift"
    }
   },
   {
@@ -6426,7 +6505,8 @@
     "note": "中學生以上。這張含坦格拉姆全部纜車，不是斑尾單區。"
    },
    "links": {
-    "ticket": "https://www.madarao.jp/ski/price"
+    "ticket": "https://www.madarao.jp/ski/price",
+    "status": "https://www.madarao.jp/ski/course/"
    }
   },
   {
@@ -6469,7 +6549,8 @@
     "note": "開場到關場。"
    },
    "links": {
-    "ticket": "https://www.maiko-resort.com/winter/lift.html"
+    "ticket": "https://www.maiko-resort.com/winter/lift.html",
+    "status": "https://www.maiko-resort.com/winter/gelande.html"
    }
   },
   {
@@ -7532,6 +7613,18 @@
     "as_of": "2026-11-10",
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "lifts": 5
+   },
+   "ticket": {
+    "jpy": 9000,
+    "season": "2026-27（12/19–2027/4/4；1Day Pass 適用 12/19–1/8、3/1–3/9）",
+    "label": "成人一日券（1Day Pass）",
+    "source": "https://tanigawadake-joch.com/mt-t/",
+    "as_of": "2026-11-10",
+    "note": "Ultimate 1Day Pass 14,000（1/9–2/28、每日限 150 名、要預約）。"
+   },
+   "links": {
+    "ticket": "https://tanigawadake-joch.com/mt-t/#ticket",
+    "status": "https://tanigawadake-joch.com/mt-t/conditions/"
    }
   },
   {
@@ -7680,7 +7773,8 @@
     "note": "一般價。會員價較低。"
    },
    "links": {
-    "ticket": "https://www.princehotels.co.jp/ski/myoko/winter/lift/"
+    "ticket": "https://www.princehotels.co.jp/ski/myoko/winter/lift/",
+    "status": "https://www.princehotels.co.jp/ski/myoko/winter/coursemap/"
    }
   },
   {
@@ -8406,7 +8500,8 @@
     "note": "初滑期間另有 5,600 円。"
    },
    "links": {
-    "ticket": "https://nozawaski.com/winter/lift_price/"
+    "ticket": "https://nozawaski.com/winter/lift_price/",
+    "status": "https://nozawaski.com/winter/course/"
    }
   },
   {
@@ -9514,7 +9609,8 @@
     "note": "成人 19–64 歲。線上價是 13,200 円。"
    },
    "links": {
-    "ticket": "https://rusutsu.com/winter-lift-tickets/"
+    "ticket": "https://rusutsu.com/winter-lift-tickets/",
+    "status": "https://rusutsu.com/lift-and-trail-status/"
    }
   },
   {
@@ -9557,7 +9653,8 @@
     "note": "平日一日券。"
    },
    "links": {
-    "ticket": "https://ryuoo.com/winter/price_w/"
+    "ticket": "https://ryuoo.com/winter/price_w/",
+    "status": "https://ryuoo.com/winter/gelande/"
    }
   },
   {
@@ -9611,6 +9708,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 20,
     "lifts": 9
+   },
+   "ticket": {
+    "jpy": 9300,
+    "season": "2026-27 季（官網料金表，未列期間窗口）",
+    "label": "成人一日券",
+    "source": "https://sahoro-resort.com/winter/ski/price",
+    "as_of": "2026-11-10",
+    "note": "こども 7,400、シニア 7,400；4小時券 7,400；25小時券 33,000。"
+   },
+   "links": {
+    "ticket": "https://sahoro-resort.com/winter/ski/price"
    }
   },
   {
@@ -9856,7 +9964,8 @@
     "note": "一般窗口。網頁上的線上價是 6,700 円。"
    },
    "links": {
-    "ticket": "https://www.sapporo-kokusai.jp/price/"
+    "ticket": "https://www.sapporo-kokusai.jp/price/",
+    "status": "https://www.sapporo-kokusai.jp/slopes/"
    }
   },
   {
@@ -9926,6 +10035,14 @@
    "links": {
     "ticket": "https://sapporo-teine.com/snow/lang/en/tickets/",
     "status": "https://sapporo-teine.com/snow/lang/en/trailstatus"
+   },
+   "ticket": {
+    "jpy": 9800,
+    "season": "2026-27 High Season（12/19–3/7）窓口價",
+    "label": "成人 1 Day Pass（窗口）",
+    "source": "https://sapporo-teine.com/snow/lang/en/tickets/",
+    "as_of": "2026-11-10",
+    "note": "線上預購 8,800；Early Season（開季–12/18）窓口 9,400／線上 8,400； Teens、シニア High 8,100。"
    }
   },
   {
@@ -10611,6 +10728,14 @@
    "links": {
     "ticket": "https://www.princehotels.co.jp/ski/shiga/winter/lift/",
     "status": "https://www.princehotels.co.jp/ski/shiga/winter/coursemap/"
+   },
+   "ticket": {
+    "jpy": 8500,
+    "season": "2026-27（12/19–3/31）主期間窗口價",
+    "label": "成人一日券（燒額山エリア）",
+    "source": "https://www.princehotels.co.jp/ski/shiga/winter/lift/",
+    "as_of": "2026-11-10",
+    "note": "WEB 事前購 7,500；志賀高原 18 雪場共通一日券 9,500；オープン季特價 5,000。"
    }
   },
   {
@@ -11287,7 +11412,8 @@
     "note": "平日是 4,300 円。有效到 22:00。"
    },
    "links": {
-    "ticket": "https://www.yeti-resort.com/service/"
+    "ticket": "https://www.yeti-resort.com/service/",
+    "status": "https://www.yeti-resort.com/guide/"
    }
   },
   {
@@ -12129,7 +12255,8 @@
     "note": "坦格拉姆專用。與斑尾共通的マウンテンパス是 9,000 円。"
    },
    "links": {
-    "ticket": "https://www.tangram.jp/ski/ticket/ticket.php"
+    "ticket": "https://www.tangram.jp/ski/ticket/ticket.php",
+    "status": "https://www.tangram.jp/ski/ski/lift.php"
    }
   },
   {
@@ -12569,6 +12696,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 32,
     "lifts": 5
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 冬季（主季日期未列；アーリー 12/1–12/20、スプリング 3/29–4/5）",
+    "label": "成人一日券（窗口價）",
+    "source": "https://www.snowtomamu.jp/winter/ski/ticket/",
+    "as_of": "2026-11-10",
+    "note": "WEB 票 9,200、住宿客優待 9,000；アーリー／スプリング一日券 5,000。官網未列 26-27 主季日期。"
+   },
+   "links": {
+    "ticket": "https://www.snowtomamu.jp/winter/ski/ticket/"
    }
   },
   {
@@ -12676,7 +12814,8 @@
     "note": "對照早割的通常售價。早割一日券是 6,500 円。"
    },
    "links": {
-    "ticket": "https://www.tsugaike.gr.jp/snow/price"
+    "ticket": "https://www.tsugaike.gr.jp/snow/price",
+    "status": "https://www.tsugaike.gr.jp/"
    }
   },
   {
@@ -13840,6 +13979,10 @@
     "as_of": "2026-11-10",
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "lifts": 6
+   },
+   "links": {
+    "ticket": "https://www.yuzawakogen.com/winter/tickets/",
+    "status": "https://www.yuzawakogen.com/operation/"
    }
   },
   {
@@ -13977,7 +14120,16 @@
     "lifts": 36
    },
    "links": {
-    "status": "https://zaomountainresort.com/ropeway-lift-information/"
+    "status": "https://zaomountainresort.com/ropeway-lift-information/",
+    "ticket": "https://zaomountainresort.com/chrage/"
+   },
+   "ticket": {
+    "jpy": 9000,
+    "season": "2026-27 ピーク（12/26–1/3、1/30–2/28）全山共通",
+    "label": "成人一日券（全山共通）",
+    "source": "https://zaomountainresort.com/chrage/",
+    "as_of": "2026-11-10",
+    "note": "レギュラー 8,000（12/19–25、1/4–29、3/1–14）；スプリング 7,000；オープン／ファイナル 4,800；高校生・シニアピーク 8,100；小人ピーク 4,500。"
    }
   },
   {
