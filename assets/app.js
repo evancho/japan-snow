@@ -1,13 +1,39 @@
+const APP_VERSION = "1.1.0";
 const FKEY = "jp-snow-favs";
+const SKIP_KEY = "jp-snow-skip-version";
+const CHECK_MS = 15 * 60 * 1000;
+const FIELD_KEY = "jp-snow-cards";
+const FIELD_DEFS = [
+  ["depth", "積雪"],
+  ["d24", "24 小時新雪"],
+  ["d48", "48 小時新雪"],
+  ["temp", "氣溫"],
+  ["forecast", "未來 3 日預報"],
+  ["size", "雪道規模"],
+  ["price", "一日券價格"],
+];
+const SORTS = new Set(["depth", "d24", "d48", "fc3", "name", "size", "price_asc", "price_desc"]);
 const WEEK = ["日", "一", "二", "三", "四", "五", "六"];
 
-const state = { q: "", region: "all", sort: "depth", id: null };
+const state = { q: "", region: "all", prefs: [], sort: "size", id: null };
+const PREF_ORDER = [
+  "北海道", "青森", "岩手", "秋田", "山形", "宮城", "福島",
+  "新潟", "群馬", "栃木", "茨城", "埼玉", "千葉", "東京", "神奈川",
+  "長野", "富山", "石川", "福井", "山梨", "岐阜", "靜岡", "愛知", "三重",
+  "滋賀", "京都", "大阪", "兵庫", "奈良", "和歌山",
+  "鳥取", "島根", "岡山", "廣島", "山口",
+  "德島", "香川", "愛媛", "高知",
+  "福岡", "佐賀", "長崎", "熊本", "大分", "宮崎", "鹿兒島", "沖繩",
+];
 let resorts = [];
 let cond = {};
 let updated = "";
 let obsTime = "";
 let regions = [];
+let manifest = null;
+let checkTimer = 0;
 const favs = loadFavs();
+let fields = loadFields();
 
 const qInput = document.querySelector("#q");
 const sortSel = document.querySelector("#sort");
@@ -38,6 +64,28 @@ function loadFavs() {
 }
 function saveFavs() {
   localStorage.setItem(FKEY, JSON.stringify([...favs]));
+}
+function defaultFields() {
+  return Object.fromEntries(FIELD_DEFS.map(([id]) => [id, true]));
+}
+function loadFields() {
+  const base = defaultFields();
+  try {
+    const raw = JSON.parse(localStorage.getItem(FIELD_KEY) || "null");
+    if (!raw || typeof raw !== "object") return base;
+    for (const [id] of FIELD_DEFS) {
+      if (typeof raw[id] === "boolean") base[id] = raw[id];
+    }
+  } catch {
+    return base;
+  }
+  return base;
+}
+function saveFields() {
+  localStorage.setItem(FIELD_KEY, JSON.stringify(fields));
+}
+function showField(id) {
+  return fields[id] !== false;
 }
 
 function fold(value) {
@@ -124,13 +172,16 @@ function readHash() {
   state.id = match ? decodeURIComponent(match[1]) : null;
   state.q = params.get("q") || "";
   state.region = params.get("region") || "all";
-  state.sort = params.get("sort") || "depth";
+  state.prefs = (params.get("pref") || "").split(",").map((item) => item.trim()).filter(Boolean);
+  state.sort = params.get("sort") || "size";
+  if (!SORTS.has(state.sort)) state.sort = "size";
 }
 function writeHash(replace) {
   const params = new URLSearchParams();
   if (state.q) params.set("q", state.q);
-  if (state.region && state.region !== "all") params.set("region", state.region);
-  if (state.sort && state.sort !== "depth") params.set("sort", state.sort);
+  if (state.prefs.length) params.set("pref", state.prefs.join(","));
+  else if (state.region && state.region !== "all") params.set("region", state.region);
+  if (state.sort && state.sort !== "size") params.set("sort", state.sort);
   const qs = params.toString();
   const path = state.id ? `/r/${encodeURIComponent(state.id)}` : "/";
   const next = "#" + path + (qs ? `?${qs}` : "");
@@ -150,7 +201,9 @@ function syncControls() {
   if (document.activeElement !== qInput && qInput.value !== state.q) qInput.value = state.q;
   if (sortSel.value !== state.sort) sortSel.value = state.sort;
   for (const button of regionBox.querySelectorAll("button")) {
-    button.setAttribute("aria-selected", button.dataset.region === state.region ? "true" : "false");
+    const pref = button.dataset.pref || "";
+    const on = pref ? state.prefs.includes(pref) : state.prefs.length === 0 && state.region === "all";
+    button.setAttribute("aria-pressed", on ? "true" : "false");
   }
 }
 
@@ -158,7 +211,9 @@ function regionName(id) {
   return regions.find((item) => item.id === id)?.zh || "";
 }
 function matches(resort) {
-  if (state.region !== "all" && resort.region !== state.region) return false;
+  if (state.prefs.length) {
+    if (!state.prefs.includes(resort.pref)) return false;
+  } else if (state.region !== "all" && resort.region !== state.region) return false;
   const q = fold(state.q);
   if (!q) return true;
   return resort._q.includes(q);
@@ -169,9 +224,44 @@ function metric(resort, key) {
   const value = row[key];
   return typeof value === "number" ? value : -1;
 }
+function sizeKm(resort) {
+  const km = resort.size && resort.size.piste_km;
+  return typeof km === "number" ? km : null;
+}
+function priceYen(resort) {
+  const yen = resort.ticket && resort.ticket.jpy;
+  return typeof yen === "number" ? yen : null;
+}
 function bySort(a, b) {
-  if (state.sort === "name") return a.zh.localeCompare(b.zh, "zh-Hant");
-  return metric(b, state.sort) - metric(a, state.sort) || a.zh.localeCompare(b.zh, "zh-Hant");
+  const name = a.zh.localeCompare(b.zh, "zh-Hant");
+  if (state.sort === "name") return name;
+  if (state.sort === "size" || state.sort === "price_asc" || state.sort === "price_desc") {
+    const av = state.sort === "size" ? sizeKm(a) : priceYen(a);
+    const bv = state.sort === "size" ? sizeKm(b) : priceYen(b);
+    if (av == null && bv == null) return name;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    const sign = state.sort === "price_asc" ? 1 : -1;
+    return (av - bv) * sign || name;
+  }
+  return metric(b, state.sort) - metric(a, state.sort) || name;
+}
+function yenText(value) {
+  return "¥" + Number(value).toLocaleString("zh-Hant");
+}
+function sizeLine(resort) {
+  const size = resort.size;
+  if (!size || size.piste_km == null) return "未知";
+  const km = Number.isInteger(size.piste_km) ? String(size.piste_km) : String(size.piste_km);
+  const bits = [`${km} km`];
+  if (size.courses) bits.push(`${size.courses} 條`);
+  if (size.lifts) bits.push(`纜車 ${size.lifts}`);
+  return bits.join(" · ");
+}
+function priceLine(resort) {
+  const ticket = resort.ticket;
+  if (!ticket || ticket.jpy == null) return "未知";
+  return `${yenText(ticket.jpy)}（${ticket.season}）`;
 }
 
 function card(resort) {
@@ -198,20 +288,37 @@ function card(resort) {
   title.textContent = resort.zh;
   const sub = document.createElement("p");
   sub.className = "sub";
-  sub.textContent = [resort.pref, resort.ja].filter(Boolean).join(" · ");
+  const regionLabel = regionName(resort.region);
+  const place = regionLabel && regionLabel !== resort.pref ? `${resort.pref}（${regionLabel}）` : resort.pref;
+  sub.textContent = [place, resort.ja].filter(Boolean).join(" · ");
+  link.append(title, sub);
   const stats = document.createElement("div");
   stats.className = "stats";
-  stats.append(
-    stat(cm(row.depth), "cm", `積雪 · ${kindText(row.depth_kind || "est")}`, row.depth),
-    stat(cm(row.d24), "cm", row.d24_kind === "obs" ? "24 小時 · 實測" : "24 小時", row.d24, true),
-    stat(tempText(row.temp), "", row.temp_kind === "obs" ? "氣溫 · 實測" : "氣溫", row.temp)
-  );
-  const extra = document.createElement("p");
-  extra.className = "extra";
-  extra.textContent = `48 小時 ${cm(row.d48)} cm · 未來 3 日 ${cm(row.fc3)} cm`;
-  link.append(title, sub, stats, extra);
+  if (showField("depth")) stats.append(stat(cm(row.depth), "cm", `積雪 · ${kindText(row.depth_kind || "est")}`, row.depth));
+  if (showField("d24")) stats.append(stat(cm(row.d24), "cm", row.d24_kind === "obs" ? "24 小時 · 實測" : "24 小時", row.d24, true));
+  if (showField("temp")) stats.append(stat(tempText(row.temp), "", row.temp_kind === "obs" ? "氣溫 · 實測" : "氣溫", row.temp));
+  if (stats.childElementCount) link.append(stats);
+  const extraBits = [];
+  if (showField("d48")) extraBits.push(`48 小時 ${cm(row.d48)} cm`);
+  if (showField("forecast")) extraBits.push(`未來 3 日 ${cm(row.fc3)} cm`);
+  if (extraBits.length) {
+    const extra = document.createElement("p");
+    extra.className = "extra";
+    extra.textContent = extraBits.join(" · ");
+    link.append(extra);
+  }
+  if (showField("size")) link.append(metaLine("雪道", sizeLine(resort)));
+  if (showField("price")) link.append(metaLine("一日券", priceLine(resort)));
   article.append(link, fav);
   return article;
+}
+function metaLine(label, value) {
+  const p = document.createElement("p");
+  p.className = "meta";
+  const strong = document.createElement("b");
+  strong.textContent = label + " ";
+  p.append(strong, document.createTextNode(value));
+  return p;
 }
 function stat(value, unit, label, raw, hotSnow) {
   const node = document.createElement("div");
@@ -229,8 +336,9 @@ function stat(value, unit, label, raw, hotSnow) {
 function hrefFor(next) {
   const params = new URLSearchParams();
   if (next.q) params.set("q", next.q);
-  if (next.region && next.region !== "all") params.set("region", next.region);
-  if (next.sort && next.sort !== "depth") params.set("sort", next.sort);
+  if (next.prefs && next.prefs.length) params.set("pref", next.prefs.join(","));
+  else if (next.region && next.region !== "all") params.set("region", next.region);
+  if (next.sort && next.sort !== "size") params.set("sort", next.sort);
   const qs = params.toString();
   const path = next.id ? `/r/${encodeURIComponent(next.id)}` : "/";
   return "#" + path + (qs ? `?${qs}` : "");
@@ -340,7 +448,7 @@ function renderDetail() {
     cell(wxText(row.wx) || "—", "現在天氣")
   );
 
-  wrap.append(back, h1, names, hero, grid);
+  wrap.append(back, h1, names, hero, grid, factsBox(resort));
   if (resort.note) {
     const note = document.createElement("p");
     note.className = "note";
@@ -366,6 +474,9 @@ function renderDetail() {
   share.textContent = "分享";
   share.addEventListener("click", () => shareResort(resort));
   actions.append(fav, share);
+  const links = resort.links || {};
+  if (links.status) actions.append(extLink(links.status, "纜車即時運行狀態"));
+  if (links.ticket) actions.append(extLink(links.ticket, "纜車票價"));
   if (resort.web) {
     const site = document.createElement("a");
     site.href = resort.web;
@@ -391,6 +502,42 @@ function renderDetail() {
   document.title = `${resort.zh}｜日本雪場`;
 }
 
+function factsBox(resort) {
+  const box = document.createElement("div");
+  box.className = "obs-box";
+  const h2 = document.createElement("h2");
+  h2.textContent = "雪道與一日券";
+  const size = document.createElement("p");
+  size.textContent = `雪道規模：${sizeLine(resort)}`;
+  const sizeNote = document.createElement("p");
+  sizeNote.className = "extra";
+  sizeNote.textContent = resort.size
+    ? `${resort.size.note} 統計日 ${resort.size.as_of}。`
+    : "OpenStreetMap 還沒畫到足夠的雪道，所以是未知。";
+  const price = document.createElement("p");
+  price.textContent = resort.ticket
+    ? `一日券：${yenText(resort.ticket.jpy)}，${resort.ticket.season}。`
+    : "一日券：未知。";
+  box.append(h2, size, sizeNote, price);
+  if (resort.ticket) {
+    const note = document.createElement("p");
+    note.className = "extra";
+    const bits = [`查閱日 ${resort.ticket.as_of}`];
+    if (resort.ticket.note) bits.push(resort.ticket.note);
+    note.append(document.createTextNode(bits.join("。") + "。來源："));
+    note.append(extLink(resort.ticket.source, "官網頁面"));
+    box.append(note);
+  }
+  return box;
+}
+function extLink(href, text) {
+  const a = document.createElement("a");
+  a.href = href;
+  a.target = "_blank";
+  a.rel = "noopener";
+  a.textContent = text;
+  return a;
+}
 function cell(value, label) {
   const node = document.createElement("div");
   node.className = "cell";
@@ -513,25 +660,37 @@ function render() {
 }
 
 function renderChrome() {
+  const counts = new Map();
+  for (const resort of resorts) counts.set(resort.pref, (counts.get(resort.pref) || 0) + 1);
+  const prefs = [...counts.keys()].sort((a, b) => {
+    const ia = PREF_ORDER.indexOf(a);
+    const ib = PREF_ORDER.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || a.localeCompare(b, "zh-Hant");
+  });
   regionBox.replaceChildren();
   const all = document.createElement("button");
   all.type = "button";
-  all.dataset.region = "all";
-  all.textContent = "全部";
-  all.setAttribute("role", "tab");
+  all.textContent = `全部 ${resorts.length}`;
   regionBox.append(all);
-  for (const region of regions) {
+  for (const pref of prefs) {
     const button = document.createElement("button");
     button.type = "button";
-    button.dataset.region = region.id;
-    button.textContent = region.zh;
-    button.setAttribute("role", "tab");
+    button.dataset.pref = pref;
+    button.textContent = `${pref} ${counts.get(pref)}`;
     regionBox.append(button);
   }
   regionBox.addEventListener("click", (event) => {
     const button = event.target.closest("button");
     if (!button) return;
-    state.region = button.dataset.region;
+    state.region = "all";
+    if (!button.dataset.pref) {
+      state.prefs = [];
+    } else {
+      const pref = button.dataset.pref;
+      state.prefs = state.prefs.includes(pref)
+        ? state.prefs.filter((item) => item !== pref)
+        : [...state.prefs, pref];
+    }
     writeHash(false);
   });
   const season = seasonCopy();
@@ -553,11 +712,20 @@ function renderChrome() {
     link("https://open-meteo.com/", "Open-Meteo"),
     document.createTextNode(" 天氣模式的估計（CC BY 4.0）。雪場位置 © "),
     link("https://www.openstreetmap.org/copyright", "OpenStreetMap"),
-    document.createTextNode(" 貢獻者。測站資料來源："),
+    document.createTextNode(" 貢獻者。雪道長度是同一份地圖裡 downhill 雪道的加總。一日券只收錄從雪場官網讀到的成人價，並寫上適用期間。測站資料來源："),
     link("https://www.jma.go.jp/bosai/amedas/", "氣象廳"),
     document.createTextNode("，內容有整理，不是原始畫面。這不是正式預報，出發前請再跟雪場確認。")
   );
-  colophon.append(p1, p2);
+  const versionLine = document.createElement("p");
+  versionLine.className = "version-line";
+  versionLine.append(document.createTextNode(`版本 ${versionLabel(APP_VERSION)} · `));
+  const logButton = document.createElement("button");
+  logButton.type = "button";
+  logButton.className = "linkish";
+  logButton.dataset.openChangelog = "1";
+  logButton.textContent = "更新紀錄";
+  versionLine.append(logButton);
+  colophon.append(p1, p2, versionLine);
 }
 function link(href, text) {
   const a = document.createElement("a");
@@ -568,8 +736,140 @@ function link(href, text) {
   return a;
 }
 
+function semverParts(value) {
+  const match = String(value || "").trim().replace(/^v/i, "").match(/^(\d+)\.(\d+)\.(\d+)$/);
+  return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : null;
+}
+function semverCmp(left, right) {
+  const a = semverParts(left);
+  const b = semverParts(right);
+  if (!a || !b) return null;
+  for (let i = 0; i < 3; i += 1) {
+    if (a[i] !== b[i]) return a[i] - b[i];
+  }
+  return 0;
+}
+function versionLabel(value) {
+  return "v" + String(value || "").replace(/^v/i, "");
+}
+async function fetchManifest() {
+  const response = await fetch(`version.json?t=${Date.now()}`, { cache: "no-cache" });
+  if (!response.ok) throw new Error("version");
+  return response.json();
+}
+function showUpdate(remote) {
+  const banner = document.querySelector("#update");
+  document.querySelector("#update-title").textContent = `有新版本 ${versionLabel(remote.version)}`;
+  const list = document.querySelector("#update-notes");
+  list.replaceChildren();
+  const entry = (remote.history || []).find((item) => item.version === remote.version);
+  const notes = entry && Array.isArray(entry.notes) && entry.notes.length ? entry.notes : ["這個版本有新的頁面。"];
+  for (const note of notes) {
+    const item = document.createElement("li");
+    item.textContent = note;
+    list.append(item);
+  }
+  banner.dataset.version = remote.version;
+  banner.hidden = false;
+}
+async function checkForUpdate() {
+  try {
+    const fresh = await fetchManifest();
+    manifest = fresh;
+    const cmp = semverCmp(fresh.version, APP_VERSION);
+    if (cmp == null || cmp <= 0) return;
+    if (sessionStorage.getItem(SKIP_KEY) === fresh.version) return;
+    showUpdate(fresh);
+  } catch {
+    /* 版本檔讀不到就維持現在這版，不要擋雪況。 */
+  }
+}
+function scheduleCheck() {
+  clearTimeout(checkTimer);
+  checkTimer = setTimeout(checkForUpdate, 400);
+}
+async function updateNow() {
+  const urls = new Set(["index.html", "version.json", "favicon.svg"]);
+  for (const node of document.querySelectorAll("script[src], link[rel='stylesheet']")) {
+    const src = node.getAttribute("src") || node.getAttribute("href");
+    if (src) urls.add(new URL(src, location.href).href);
+  }
+  await Promise.all([...urls].map((url) => fetch(url, { cache: "reload" }).catch(() => {})));
+  const next = new URL(location.href);
+  const version = document.querySelector("#update").dataset.version || "";
+  if (version) next.searchParams.set("v", version);
+  location.replace(next.href);
+}
+async function openChangelog() {
+  const panel = document.querySelector("#changelog");
+  const body = document.querySelector("#changelog-body");
+  if (!manifest) {
+    try {
+      manifest = await fetchManifest();
+    } catch {
+      manifest = null;
+    }
+  }
+  body.replaceChildren();
+  const history = (manifest && manifest.history) || [];
+  if (!history.length) {
+    const empty = document.createElement("p");
+    empty.textContent = `更新紀錄暫時讀不到。目前這個頁面是 ${versionLabel(APP_VERSION)}。`;
+    body.append(empty);
+  } else {
+    const wrap = document.createElement("div");
+    wrap.className = "releases";
+    for (const entry of history) {
+      const block = document.createElement("section");
+      block.className = "release";
+      const heading = document.createElement("h3");
+      const date = String(entry.date || "").replace(/-/g, "/");
+      heading.textContent = versionLabel(entry.version) + (date ? `　${date}` : "");
+      const list = document.createElement("ul");
+      for (const note of entry.notes || []) {
+        const item = document.createElement("li");
+        item.textContent = note;
+        list.append(item);
+      }
+      block.append(heading, list);
+      wrap.append(block);
+    }
+    body.append(wrap);
+  }
+  document.querySelector("#settings").hidden = true;
+  panel.hidden = false;
+}
+function bindVersion() {
+  const settingsVersion = document.querySelector("#settings-version");
+  if (settingsVersion) settingsVersion.textContent = versionLabel(APP_VERSION);
+  document.addEventListener("click", (event) => {
+    if (event.target.closest("[data-open-changelog]")) openChangelog();
+  });
+  document.querySelector("#changelog-close").addEventListener("click", () => {
+    document.querySelector("#changelog").hidden = true;
+  });
+  document.querySelector("#changelog").addEventListener("click", (event) => {
+    if (event.target.id === "changelog") document.querySelector("#changelog").hidden = true;
+  });
+  document.querySelector("#update-later").addEventListener("click", () => {
+    const version = document.querySelector("#update").dataset.version || "";
+    if (version) sessionStorage.setItem(SKIP_KEY, version);
+    document.querySelector("#update").hidden = true;
+  });
+  document.querySelector("#update-now").addEventListener("click", () => {
+    updateNow();
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") scheduleCheck();
+  });
+  window.addEventListener("focus", scheduleCheck);
+  setInterval(scheduleCheck, CHECK_MS);
+  checkForUpdate();
+}
+
 async function main() {
   readHash();
+  bindVersion();
   try {
     const [resortRes, condRes] = await Promise.all([
       fetch("data/resorts.json", { cache: "no-cache" }),
@@ -593,8 +893,47 @@ async function main() {
     return;
   }
   renderChrome();
+  bindSettings();
   syncControls();
   render();
+}
+
+function bindSettings() {
+  const panel = document.querySelector("#settings");
+  const fieldsBox = document.querySelector("#settings-fields");
+  const paint = () => {
+    fieldsBox.replaceChildren();
+    for (const [id, label] of FIELD_DEFS) {
+      const row = document.createElement("label");
+      row.className = "field";
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.checked = showField(id);
+      input.addEventListener("change", () => {
+        fields[id] = input.checked;
+        saveFields();
+        render();
+      });
+      row.append(input, document.createTextNode(label));
+      fieldsBox.append(row);
+    }
+  };
+  paint();
+  document.querySelector("#settings-open").addEventListener("click", () => {
+    panel.hidden = false;
+  });
+  document.querySelector("#settings-close").addEventListener("click", () => {
+    panel.hidden = true;
+  });
+  document.querySelector("#settings-reset").addEventListener("click", () => {
+    fields = defaultFields();
+    saveFields();
+    paint();
+    render();
+  });
+  panel.addEventListener("click", (event) => {
+    if (event.target === panel) panel.hidden = true;
+  });
 }
 
 main();

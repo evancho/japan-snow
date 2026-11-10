@@ -84,6 +84,49 @@ regions_used = {r["region"] for r in resorts}
 if len(regions_used) < 8:
     errors.append(f"only regions {regions_used}")
 
+SEMVER = re.compile(r"^\d+\.\d+\.\d+$")
+try:
+    manifest = json.loads((ROOT / "version.json").read_text(encoding="utf-8"))
+except Exception:
+    errors.append("version.json is not valid JSON")
+    manifest = {}
+version = manifest.get("version")
+history = manifest.get("history")
+if not isinstance(version, str) or not SEMVER.fullmatch(version):
+    errors.append("version.json version must be major.minor.patch")
+elif not isinstance(history, list) or not history:
+    errors.append("version.json history is empty")
+elif history[0].get("version") != version:
+    errors.append("version.json history[0] must be the current version")
+else:
+    seen = set()
+    previous = None
+    for entry in history:
+        item = entry.get("version")
+        if item in seen or not isinstance(item, str) or not SEMVER.fullmatch(item):
+            errors.append(f"bad history version {item}")
+            break
+        seen.add(item)
+        parts = tuple(int(piece) for piece in item.split("."))
+        if previous is not None and parts >= previous:
+            errors.append("version history must be newest first")
+            break
+        previous = parts
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(entry.get("date") or "")):
+            errors.append(f"{item} missing date")
+        notes = entry.get("notes")
+        if not isinstance(notes, list) or not notes or not all(isinstance(note, str) and note.strip() for note in notes):
+            errors.append(f"{item} missing notes")
+    if "1.0.0" not in seen:
+        errors.append("version history is missing 1.0.0")
+app_js = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
+html = (ROOT / "index.html").read_text(encoding="utf-8")
+if isinstance(version, str):
+    if f'const APP_VERSION = "{version}";' not in app_js:
+        errors.append("APP_VERSION does not match version.json; run scripts/stamp_version.py")
+    if f"assets/app.css?v={version}" not in html or f"assets/app.js?v={version}" not in html:
+        errors.append("index.html cache-bust does not match version.json; run scripts/stamp_version.py")
+
 if errors:
     print("\n".join(errors))
     sys.exit(1)
