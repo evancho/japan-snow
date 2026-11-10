@@ -442,6 +442,17 @@ def main() -> None:
     print(f"OSM elements: {len(osm.get('elements') or [])}")
 
     payload = build(osm, index, stations)
+    if args.out.exists():
+        try:
+            old_rows = json.loads(args.out.read_text(encoding="utf-8")).get("resorts") or []
+            previous = {row["id"]: row for row in old_rows}
+        except json.JSONDecodeError:
+            previous = {}
+        for resort in payload["resorts"]:
+            old = previous.get(resort["id"]) or {}
+            for key in ("size", "ticket", "links"):
+                if old.get(key):
+                    resort[key] = old[key]
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     resorts = payload["resorts"]

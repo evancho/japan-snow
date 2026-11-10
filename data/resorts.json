@@ -64,6 +64,14 @@
     "zh": "網走",
     "dist": 5.0,
     "ele": 38
+   },
+   "size": {
+    "piste_km": 3.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 1
    }
   },
   {
@@ -85,6 +93,14 @@
     "zh": "豬苗代",
     "dist": 20.0,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 3.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 3
    }
   },
   {
@@ -129,6 +145,17 @@
     "zh": "南鄉",
     "dist": 12.7,
     "ele": 494
+   },
+   "size": {
+    "piste_km": 9.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 11,
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://daikura.net/price/"
    }
   },
   {
@@ -150,6 +177,17 @@
     "zh": "檜枝岐",
     "dist": 11.6,
     "ele": 973
+   },
+   "size": {
+    "piste_km": 7.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 10,
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://www.takahata-ski.net/lift/"
    }
   },
   {
@@ -175,6 +213,17 @@
     "zh": "田島",
     "dist": 17.6,
     "ele": 544
+   },
+   "size": {
+    "piste_km": 10.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 14,
+    "lifts": 8
+   },
+   "links": {
+    "ticket": "https://www.takatsue.jp/lift-ticket/"
    }
   },
   {
@@ -196,6 +245,16 @@
     "zh": "南鄉",
     "dist": 1.9,
     "ele": 494
+   },
+   "size": {
+    "piste_km": 6.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
+   },
+   "links": {
+    "ticket": "https://www.nango-ski.com/lift/"
    }
   },
   {
@@ -216,6 +275,14 @@
     "zh": "遠野",
     "dist": 11.1,
     "ele": 275
+   },
+   "size": {
+    "piste_km": 1.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 3
    }
   },
   {
@@ -261,6 +328,25 @@
     "zh": "關山",
     "dist": 7.3,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 12.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 11,
+    "lifts": 7
+   },
+   "ticket": {
+    "jpy": 10000,
+    "season": "官網共通一日券（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://akr-ski.com/slope/",
+    "as_of": "2026-11-10",
+    "note": "赤倉觀光與赤倉溫泉共通，成人與中學生。"
+   },
+   "links": {
+    "ticket": "https://akr-ski.com/slope/"
    }
   },
   {
@@ -282,6 +368,14 @@
     "zh": "關山",
     "dist": 6.2,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 12.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 15
    }
   },
   {
@@ -343,6 +437,13 @@
     "zh": "岩手松尾",
     "dist": 22.1,
     "ele": 275
+   },
+   "size": {
+    "piste_km": 2.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -405,6 +506,14 @@
     "zh": "雫石",
     "dist": 15.0,
     "ele": 195
+   },
+   "size": {
+    "piste_km": 9.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 5
    }
   },
   {
@@ -426,6 +535,14 @@
     "zh": "阿仁合",
     "dist": 9.3,
     "ele": 120
+   },
+   "size": {
+    "piste_km": 12.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 4
    }
   },
   {
@@ -468,6 +585,13 @@
     "zh": "安平",
     "dist": 6.1,
     "ele": 33
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -492,6 +616,14 @@
     "zh": "鰺ケ澤",
     "dist": 12.5,
     "ele": 40
+   },
+   "size": {
+    "piste_km": 19.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 21,
+    "lifts": 4
    }
   },
   {
@@ -515,6 +647,14 @@
     "zh": "岩手松尾",
     "dist": 9.2,
     "ele": 275
+   },
+   "size": {
+    "piste_km": 43.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 27,
+    "lifts": 8
    }
   },
   {
@@ -539,6 +679,14 @@
     "zh": "關山",
     "dist": 8.5,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 15.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 5
    }
   },
   {
@@ -562,6 +710,14 @@
     "zh": "松本",
     "dist": 19.1,
     "ele": 610
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 2
    }
   },
   {
@@ -586,6 +742,14 @@
     "zh": "大井澤",
     "dist": 10.8,
     "ele": 440
+   },
+   "size": {
+    "piste_km": 3.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 5
    }
   },
   {
@@ -607,6 +771,13 @@
     "zh": "和寒",
     "dist": 18.3,
     "ele": 150
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -631,6 +802,14 @@
     "zh": "層雲峽",
     "dist": 14.3,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 6.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 1
    }
   },
   {
@@ -652,6 +831,14 @@
     "zh": "俱知安",
     "dist": 1.9,
     "ele": 176
+   },
+   "size": {
+    "piste_km": 2.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 1
    }
   },
   {
@@ -673,6 +860,14 @@
     "zh": "小樽",
     "dist": 4.9,
     "ele": 25
+   },
+   "size": {
+    "piste_km": 10.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 4
    }
   },
   {
@@ -737,6 +932,13 @@
     "zh": "豬谷",
     "dist": 21.6,
     "ele": 215
+   },
+   "size": {
+    "piste_km": 1.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -778,6 +980,13 @@
     "zh": "兎和野高原",
     "dist": 16.7,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 1.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -798,6 +1007,14 @@
     "zh": "美唄",
     "dist": 10.9,
     "ele": 16
+   },
+   "size": {
+    "piste_km": 3.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 1
    }
   },
   {
@@ -885,6 +1102,14 @@
     "zh": "大津",
     "dist": 24.7,
     "ele": 86
+   },
+   "size": {
+    "piste_km": 5.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 8
    }
   },
   {
@@ -906,6 +1131,17 @@
     "zh": "諏訪",
     "dist": 13.0,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 9.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 6
+   },
+   "links": {
+    "ticket": "https://blanche-ski.com/winter/fee/"
    }
   },
   {
@@ -930,6 +1166,13 @@
     "zh": "開田高原",
     "dist": 19.8,
     "ele": 1130
+   },
+   "size": {
+    "piste_km": 13.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 8
    }
   },
   {
@@ -963,7 +1206,14 @@
    "lon": 139.54657,
    "aliases": [],
    "roma": "budousunorizoto",
-   "osm": "way/1458630488"
+   "osm": "way/1458630488",
+   "size": {
+    "piste_km": 4.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
+   }
   },
   {
    "id": "canmore-ski-resort",
@@ -986,6 +1236,14 @@
     "zh": "東神樂",
     "dist": 10.2,
     "ele": 211
+   },
+   "size": {
+    "piste_km": 5.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 10,
+    "lifts": 2
    }
   },
   {
@@ -1007,6 +1265,17 @@
     "zh": "能生",
     "dist": 10.3,
     "ele": 55
+   },
+   "size": {
+    "piste_km": 11.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 3
+   },
+   "links": {
+    "ticket": "https://charmant-hiuchi.jp/price/"
    }
   },
   {
@@ -1028,6 +1297,16 @@
     "zh": "湯澤",
     "dist": 12.5,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 5.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://chateau-shiozawa.jp/price/"
    }
   },
   {
@@ -1053,6 +1332,13 @@
     "zh": "諏訪",
     "dist": 26.6,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 5.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -1077,6 +1363,14 @@
     "zh": "甲府",
     "dist": 29.7,
     "ele": 273
+   },
+   "size": {
+    "piste_km": 3.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 3
    }
   },
   {
@@ -1110,6 +1404,14 @@
     "zh": "智頭",
     "dist": 14.2,
     "ele": 182
+   },
+   "size": {
+    "piste_km": 4.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 5
    }
   },
   {
@@ -1183,7 +1485,15 @@
    "lon": 137.91067,
    "aliases": [],
    "roma": "sukirizoto",
-   "osm": "way/1458684045"
+   "osm": "way/1458684045",
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 2
+   }
   },
   {
    "id": "classe-snow-park",
@@ -1225,6 +1535,13 @@
     "zh": "餘市",
     "dist": 7.7,
     "ele": 20
+   },
+   "size": {
+    "piste_km": 1.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -1245,6 +1562,14 @@
     "zh": "安塚",
     "dist": 7.5,
     "ele": 126
+   },
+   "size": {
+    "piste_km": 3.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 5
    }
   },
   {
@@ -1265,6 +1590,14 @@
     "zh": "大山",
     "dist": 3.1,
     "ele": 875
+   },
+   "size": {
+    "piste_km": 1.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 1
    }
   },
   {
@@ -1308,6 +1641,13 @@
     "zh": "層雲峽",
     "dist": 5.2,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -1328,6 +1668,13 @@
     "zh": "橫田",
     "dist": 15.7,
     "ele": 369
+   },
+   "size": {
+    "piste_km": 2.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -1348,6 +1695,13 @@
     "zh": "長井",
     "dist": 3.6,
     "ele": 210
+   },
+   "size": {
+    "piste_km": 1.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -1371,6 +1725,14 @@
     "zh": "長瀧",
     "dist": 8.0,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 12.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 17,
+    "lifts": 5
    }
   },
   {
@@ -1392,6 +1754,16 @@
     "zh": "惠庭島松",
     "dist": 9.2,
     "ele": 30
+   },
+   "size": {
+    "piste_km": 2.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
+   },
+   "links": {
+    "ticket": "https://www.dynasty-resort.jp/lift/"
    }
   },
   {
@@ -1413,6 +1785,13 @@
     "zh": "諏訪",
     "dist": 11.6,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 7.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 7
    }
   },
   {
@@ -1433,6 +1812,14 @@
     "zh": "土呂部",
     "dist": 16.7,
     "ele": 925
+   },
+   "size": {
+    "piste_km": 8.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 5
    }
   },
   {
@@ -1454,6 +1841,13 @@
     "zh": "遠輕",
     "dist": 5.2,
     "ele": 80
+   },
+   "size": {
+    "piste_km": 6.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -1496,6 +1890,14 @@
     "zh": "金山",
     "dist": 3.6,
     "ele": 296
+   },
+   "size": {
+    "piste_km": 4.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 3
    }
   },
   {
@@ -1519,6 +1921,13 @@
     "zh": "諏訪",
     "dist": 7.5,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -1543,6 +1952,14 @@
     "zh": "豬苗代",
     "dist": 4.7,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 5.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 2
    }
   },
   {
@@ -1563,6 +1980,13 @@
     "zh": "小金湯",
     "dist": 5.1,
     "ele": 230
+   },
+   "size": {
+    "piste_km": 3.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -1584,6 +2008,14 @@
     "zh": "諏訪",
     "dist": 22.9,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 4
    }
   },
   {
@@ -1608,6 +2040,14 @@
     "zh": "諏訪",
     "dist": 17.0,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 13.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 7
    }
   },
   {
@@ -1665,6 +2105,26 @@
     "zh": "河口湖",
     "dist": 9.5,
     "ele": 860
+   },
+   "size": {
+    "piste_km": 3.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 4
+   },
+   "ticket": {
+    "jpy": 5800,
+    "season": "平日窗口（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.fujiten.net/charges/",
+    "as_of": "2026-11-10",
+    "note": "平日 9:00–16:30 的窗口一日券。"
+   },
+   "links": {
+    "ticket": "https://www.fujiten.net/charges/",
+    "status": "https://www.fujiten.net/slopeguide/condition/"
    }
   },
   {
@@ -1686,6 +2146,13 @@
     "zh": "藤原",
     "dist": 1.5,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -1707,6 +2174,13 @@
     "zh": "九頭龍",
     "dist": 3.6,
     "ele": 436
+   },
+   "size": {
+    "piste_km": 4.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -1750,6 +2224,14 @@
     "zh": "富良野",
     "dist": 4.9,
     "ele": 174
+   },
+   "size": {
+    "piste_km": 31.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 25,
+    "lifts": 10
    }
   },
   {
@@ -1836,6 +2318,14 @@
     "zh": "湯澤",
     "dist": 2.4,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 20.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 19,
+    "lifts": 10
    }
   },
   {
@@ -1857,6 +2347,13 @@
     "zh": "八幡",
     "dist": 4.8,
     "ele": 774
+   },
+   "size": {
+    "piste_km": 9.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 6
    }
   },
   {
@@ -1881,6 +2378,26 @@
     "zh": "湯田",
     "dist": 13.0,
     "ele": 250
+   },
+   "size": {
+    "piste_km": 13.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 5
+   },
+   "ticket": {
+    "jpy": 6900,
+    "season": "官網一日券（初滑・春雪另計）",
+    "label": "成人一日券",
+    "source": "https://www.getokogen.com/winter/02service/index.html",
+    "as_of": "2026-11-10",
+    "note": "成人欄。從閘門起連續 8 小時。初滑・春雪是 5,300 円。"
+   },
+   "links": {
+    "ticket": "https://www.getokogen.com/winter/02service/index.html",
+    "status": "https://www.getokogen.com/winter/01trail/operation.cgi"
    }
   },
   {
@@ -1924,6 +2441,13 @@
     "zh": "南阿蘇",
     "dist": 29.1,
     "ele": 394
+   },
+   "size": {
+    "piste_km": 1.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -1999,7 +2523,10 @@
    "aliases": [],
    "roma": "suki",
    "osm": "way/1463893353",
-   "web": "https://www.gozaisho.co.jp/ski/"
+   "web": "https://www.gozaisho.co.jp/ski/",
+   "links": {
+    "ticket": "https://www.gozaisho.co.jp/price/"
+   }
   },
   {
    "id": "grand-sunpia-inawashiro-resort",
@@ -2022,6 +2549,14 @@
     "zh": "豬苗代",
     "dist": 5.8,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 9.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 10,
+    "lifts": 4
    }
   },
   {
@@ -2047,6 +2582,14 @@
     "zh": "豬苗代",
     "dist": 17.5,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 12.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 5
    }
   },
   {
@@ -2070,6 +2613,14 @@
     "zh": "湯本",
     "dist": 8.0,
     "ele": 646
+   },
+   "size": {
+    "piste_km": 16.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 12,
+    "lifts": 4
    }
   },
   {
@@ -2094,6 +2645,14 @@
     "zh": "米原",
     "dist": 15.7,
     "ele": 147
+   },
+   "size": {
+    "piste_km": 7.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 11,
+    "lifts": 9
    }
   },
   {
@@ -2114,6 +2673,14 @@
     "zh": "金山",
     "dist": 7.1,
     "ele": 170
+   },
+   "size": {
+    "piste_km": 2.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 1
    }
   },
   {
@@ -2135,6 +2702,13 @@
     "zh": "森",
     "dist": 6.5,
     "ele": 125
+   },
+   "size": {
+    "piste_km": 4.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -2160,6 +2734,13 @@
     "zh": "長瀧",
     "dist": 11.4,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -2200,6 +2781,14 @@
     "zh": "古丹別",
     "dist": 7.8,
     "ele": 15
+   },
+   "size": {
+    "piste_km": 1.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 1
    }
   },
   {
@@ -2224,6 +2813,17 @@
     "zh": "兎和野高原",
     "dist": 4.6,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 8.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 9
+   },
+   "links": {
+    "ticket": "https://www.hachi-hachikita.co.jp/ticket/"
    }
   },
   {
@@ -2248,6 +2848,17 @@
     "zh": "兎和野高原",
     "dist": 7.1,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 6.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 10,
+    "lifts": 11
+   },
+   "links": {
+    "ticket": "https://www.hachi-hachikita.co.jp/ticket/"
    }
   },
   {
@@ -2272,6 +2883,13 @@
     "zh": "岩手松尾",
     "dist": 10.6,
     "ele": 275
+   },
+   "size": {
+    "piste_km": 10.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -2297,6 +2915,13 @@
     "zh": "岩手松尾",
     "dist": 11.9,
     "ele": 275
+   },
+   "size": {
+    "piste_km": 7.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -2357,6 +2982,13 @@
     "zh": "狩川",
     "dist": 11.7,
     "ele": 17
+   },
+   "size": {
+    "piste_km": 2.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -2378,6 +3010,13 @@
     "zh": "小出",
     "dist": 7.7,
     "ele": 98
+   },
+   "size": {
+    "piste_km": 3.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -2398,6 +3037,14 @@
     "zh": "酸ケ湯",
     "dist": 3.5,
     "ele": 890
+   },
+   "size": {
+    "piste_km": 8.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 3
    }
   },
   {
@@ -2419,6 +3066,14 @@
     "zh": "大沼",
     "dist": 3.5,
     "ele": 165
+   },
+   "size": {
+    "piste_km": 14.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 3
    }
   },
   {
@@ -2440,6 +3095,14 @@
     "zh": "今津",
     "dist": 5.0,
     "ele": 88
+   },
+   "size": {
+    "piste_km": 2.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 5
    }
   },
   {
@@ -2463,6 +3126,24 @@
     "zh": "白馬",
     "dist": 4.6,
     "ele": 703
+   },
+   "size": {
+    "piste_km": 11.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 一日券",
+    "label": "成人一日券",
+    "source": "https://hakuba47.co.jp/ja/lift-tickets/",
+    "as_of": "2026-11-10",
+    "note": "這筆含可退的 IC 卡保證金 500 円。早割與春雪是 8,500 円。"
+   },
+   "links": {
+    "ticket": "https://hakuba47.co.jp/ja/lift-tickets/"
    }
   },
   {
@@ -2486,6 +3167,14 @@
     "zh": "小谷",
     "dist": 6.4,
     "ele": 550
+   },
+   "size": {
+    "piste_km": 14.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 7
    }
   },
   {
@@ -2510,6 +3199,13 @@
     "zh": "白馬",
     "dist": 5.0,
     "ele": 703
+   },
+   "size": {
+    "piste_km": 12.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 13
    }
   },
   {
@@ -2537,6 +3233,26 @@
     "zh": "白馬",
     "dist": 3.9,
     "ele": 703
+   },
+   "size": {
+    "piste_km": 32.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 27,
+    "lifts": 22
+   },
+   "ticket": {
+    "jpy": 9800,
+    "season": "2026-27 旺季（12/19–3/22）",
+    "label": "成人一日券",
+    "source": "https://www.happo-one.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "窗口成人一日券。季初與春季是 6,400 円。"
+   },
+   "links": {
+    "ticket": "https://www.happo-one.jp/ticket/",
+    "status": "https://www.happo-one.jp/en/gelande/lift-report/"
    }
   },
   {
@@ -2561,6 +3277,14 @@
     "zh": "白馬",
     "dist": 3.2,
     "ele": 703
+   },
+   "size": {
+    "piste_km": 20.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 9
    }
   },
   {
@@ -2585,6 +3309,14 @@
     "zh": "小谷",
     "dist": 7.9,
     "ele": 550
+   },
+   "size": {
+    "piste_km": 10.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 11,
+    "lifts": 8
    }
   },
   {
@@ -2609,6 +3341,17 @@
     "zh": "白馬",
     "dist": 8.7,
     "ele": 703
+   },
+   "size": {
+    "piste_km": 5.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://sanosaka.jp/lift/"
    }
   },
   {
@@ -2629,6 +3372,13 @@
     "zh": "大樹",
     "dist": 7.5,
     "ele": 87
+   },
+   "size": {
+    "piste_km": 1.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -2653,6 +3403,9 @@
     "zh": "白山河內",
     "dist": 8.5,
     "ele": 136
+   },
+   "links": {
+    "ticket": "https://www.sam-hakusan.com/ticket/"
    }
   },
   {
@@ -2673,6 +3426,13 @@
     "zh": "尾花澤",
     "dist": 12.0,
     "ele": 106
+   },
+   "size": {
+    "piste_km": 2.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -2694,6 +3454,14 @@
     "zh": "鹿角",
     "dist": 5.0,
     "ele": 123
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 3
    }
   },
   {
@@ -2718,6 +3486,14 @@
     "zh": "飯田",
     "dist": 18.5,
     "ele": 516
+   },
+   "size": {
+    "piste_km": 4.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 6
    }
   },
   {
@@ -2743,6 +3519,13 @@
     "zh": "高山",
     "dist": 13.6,
     "ele": 560
+   },
+   "size": {
+    "piste_km": 6.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -2764,6 +3547,14 @@
     "zh": "河合",
     "dist": 8.0,
     "ele": 471
+   },
+   "size": {
+    "piste_km": 3.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 4
    }
   },
   {
@@ -2785,6 +3576,14 @@
     "zh": "神岡",
     "dist": 6.4,
     "ele": 455
+   },
+   "size": {
+    "piste_km": 11.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 7
    }
   },
   {
@@ -2806,6 +3605,13 @@
     "zh": "高山",
     "dist": 16.4,
     "ele": 560
+   },
+   "size": {
+    "piste_km": 4.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -2827,6 +3633,13 @@
     "zh": "日高",
     "dist": 1.9,
     "ele": 280
+   },
+   "size": {
+    "piste_km": 5.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -2909,6 +3722,13 @@
     "zh": "大町",
     "dist": 21.9,
     "ele": 784
+   },
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -2943,7 +3763,17 @@
    "aliases": [],
    "roma": "hirayasuki",
    "osm": "way/941714799",
-   "web": "https://hiraya-kougen.com/"
+   "web": "https://hiraya-kougen.com/",
+   "size": {
+    "piste_km": 1.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
+   },
+   "links": {
+    "ticket": "https://hiraya-kougen.com/lift_price.php"
+   }
   },
   {
    "id": "hirayu-onsen-ski-area",
@@ -2964,6 +3794,17 @@
     "zh": "神岡",
     "dist": 27.2,
     "ele": 455
+   },
+   "size": {
+    "piste_km": 3.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 2
+   },
+   "links": {
+    "ticket": "https://www.hirayunomori.com/price/"
    }
   },
   {
@@ -2988,6 +3829,17 @@
     "zh": "長瀧",
     "dist": 11.8,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 4.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 8,
+    "lifts": 3
+   },
+   "links": {
+    "ticket": "https://www.hiruganokogen.com/price/"
    }
   },
   {
@@ -3012,6 +3864,13 @@
     "zh": "上長田",
     "dist": 12.3,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 2.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -3033,6 +3892,14 @@
     "zh": "藤原",
     "dist": 4.2,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 12.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 15,
+    "lifts": 6
    }
   },
   {
@@ -3053,6 +3920,13 @@
     "zh": "岩見澤",
     "dist": 4.8,
     "ele": 42
+   },
+   "size": {
+    "piste_km": 2.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -3094,6 +3968,17 @@
     "zh": "高山",
     "dist": 21.4,
     "ele": 560
+   },
+   "size": {
+    "piste_km": 8.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 16,
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://hounoki-daira.com/price/"
    }
   },
   {
@@ -3119,6 +4004,24 @@
     "zh": "豬苗代",
     "dist": 8.6,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 23.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 34,
+    "lifts": 18
+   },
+   "ticket": {
+    "jpy": 6500,
+    "season": "2026-27 通常",
+    "label": "成人一日券",
+    "source": "https://www.nekoma.co.jp/price/",
+    "as_of": "2026-11-10"
+   },
+   "links": {
+    "ticket": "https://www.nekoma.co.jp/price/"
    }
   },
   {
@@ -3165,6 +4068,14 @@
     "zh": "兎和野高原",
     "dist": 9.0,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 2.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 4
    }
   },
   {
@@ -3186,6 +4097,13 @@
     "zh": "兎和野高原",
     "dist": 5.1,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 4.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -3206,6 +4124,13 @@
     "zh": "千屋",
     "dist": 7.3,
     "ele": 525
+   },
+   "size": {
+    "piste_km": 2.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -3227,6 +4152,13 @@
     "zh": "信濃町",
     "dist": 8.2,
     "ele": 685
+   },
+   "size": {
+    "piste_km": 8.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -3241,7 +4173,14 @@
    "aliases": [],
    "roma": "suki",
    "osm": "way/1201617494",
-   "web": "https://www.ikawaski.jp/"
+   "web": "https://www.ikawaski.jp/",
+   "size": {
+    "piste_km": 1.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
+   }
   },
   {
    "id": "ikenotaira-onsen-alpen-blick-ski-resort",
@@ -3262,6 +4201,14 @@
     "zh": "信濃町",
     "dist": 8.1,
     "ele": 685
+   },
+   "size": {
+    "piste_km": 15.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 6
    }
   },
   {
@@ -3286,6 +4233,14 @@
     "zh": "今庄",
     "dist": 7.2,
     "ele": 128
+   },
+   "size": {
+    "piste_km": 5.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 4
    }
   },
   {
@@ -3330,6 +4285,17 @@
     "zh": "豬苗代",
     "dist": 3.7,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 23.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 22,
+    "lifts": 11
+   },
+   "links": {
+    "ticket": "https://www.inawashiro-ski.com/lift/"
    }
   },
   {
@@ -3397,6 +4363,13 @@
     "zh": "湯澤",
     "dist": 0.8,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 2.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -3438,6 +4411,13 @@
     "zh": "湯澤",
     "dist": 5.5,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 2.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -3459,6 +4439,17 @@
     "zh": "湯澤",
     "dist": 3.6,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 17.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 21,
+    "lifts": 14
+   },
+   "links": {
+    "ticket": "https://ishiuchi.or.jp/winter/price/ic-tiket/"
    }
   },
   {
@@ -3475,7 +4466,17 @@
    ],
    "roma": "sukipikunikku ishizuchi",
    "osm": "way/1065975025",
-   "web": "https://www.ishizuchi.com/ski/"
+   "web": "https://www.ishizuchi.com/ski/",
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://www.ishizuchi.com/ski/price"
+   }
   },
   {
    "id": "itoigawa-seaside-valley-ski-resort",
@@ -3496,6 +4497,16 @@
     "zh": "小谷",
     "dist": 12.7,
     "ele": 550
+   },
+   "size": {
+    "piste_km": 10.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://seasidevalley.com/price/"
    }
   },
   {
@@ -3517,6 +4528,13 @@
     "zh": "小出",
     "dist": 13.2,
     "ele": 98
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -3538,6 +4556,13 @@
     "zh": "弘前",
     "dist": 11.1,
     "ele": 30
+   },
+   "size": {
+    "piste_km": 2.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -3558,6 +4583,14 @@
     "zh": "共和",
     "dist": 8.6,
     "ele": 15
+   },
+   "size": {
+    "piste_km": 2.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 1
    }
   },
   {
@@ -3581,6 +4614,17 @@
     "zh": "湯澤",
     "dist": 2.9,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 17.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 8
+   },
+   "links": {
+    "ticket": "https://iwa-ppara.com/price/"
    }
   },
   {
@@ -3602,6 +4646,13 @@
     "zh": "雫石",
     "dist": 14.0,
     "ele": 195
+   },
+   "size": {
+    "piste_km": 9.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 6
    }
   },
   {
@@ -3623,6 +4674,14 @@
     "zh": "新川",
     "dist": 12.4,
     "ele": 265
+   },
+   "size": {
+    "piste_km": 5.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 2
    }
   },
   {
@@ -3667,6 +4726,13 @@
     "zh": "湯田",
     "dist": 17.3,
     "ele": 250
+   },
+   "size": {
+    "piste_km": 9.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -3687,6 +4753,14 @@
     "zh": "飯田",
     "dist": 23.2,
     "ele": 516
+   },
+   "size": {
+    "piste_km": 3.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 2
    }
   },
   {
@@ -3708,6 +4782,17 @@
     "zh": "大町",
     "dist": 5.1,
     "ele": 784
+   },
+   "size": {
+    "piste_km": 5.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://jiigatake.com/price/"
    }
   },
   {
@@ -3732,6 +4817,14 @@
     "zh": "湯澤",
     "dist": 10.1,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 14.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 10
    }
   },
   {
@@ -3799,6 +4892,26 @@
     "zh": "湯澤",
     "dist": 10.0,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 34.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 25,
+    "lifts": 8
+   },
+   "ticket": {
+    "jpy": 11800,
+    "season": "2026/12/26–2027/3/22",
+    "label": "成人一日券",
+    "source": "https://www.princehotels.co.jp/ski/kagura/winter/lift/",
+    "as_of": "2026-11-10",
+    "note": "苗場、神樂、三俣、田代共通一日券。"
+   },
+   "links": {
+    "ticket": "https://www.princehotels.co.jp/ski/kagura/winter/lift/",
+    "status": "https://www.princehotels.co.jp/ski/kagura/informations/?tab=operation"
    }
   },
   {
@@ -3900,6 +5013,13 @@
     "zh": "瀧川",
     "dist": 7.8,
     "ele": 50
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -3921,6 +5041,17 @@
     "zh": "河口湖",
     "dist": 8.8,
     "ele": 860
+   },
+   "size": {
+    "piste_km": 2.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://misaka.kamuisp.com/price/sp/"
    }
   },
   {
@@ -3945,6 +5076,14 @@
     "zh": "深川",
     "dist": 10.3,
     "ele": 55
+   },
+   "size": {
+    "piste_km": 28.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 24,
+    "lifts": 6
    }
   },
   {
@@ -4010,6 +5149,17 @@
     "zh": "湯澤",
     "dist": 4.3,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 11.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 16,
+    "lifts": 6
+   },
+   "links": {
+    "ticket": "https://www.kandatsu.com/price/"
    }
   },
   {
@@ -4033,6 +5183,13 @@
     "zh": "輕井澤",
     "dist": 11.4,
     "ele": 999
+   },
+   "size": {
+    "piste_km": 2.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -4075,6 +5232,14 @@
     "zh": "大町",
     "dist": 8.6,
     "ele": 784
+   },
+   "size": {
+    "piste_km": 8.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 11,
+    "lifts": 5
    }
   },
   {
@@ -4098,6 +5263,14 @@
     "zh": "藤原",
     "dist": 15.7,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 7.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 6
    }
   },
   {
@@ -4119,6 +5292,16 @@
     "zh": "藤原",
     "dist": 13.6,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 5.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://k-hotaka.jp/ogna/price/"
    }
   },
   {
@@ -4139,6 +5322,13 @@
     "zh": "岩見澤",
     "dist": 16.3,
     "ele": 42
+   },
+   "size": {
+    "piste_km": 2.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -4162,6 +5352,25 @@
     "zh": "藤原",
     "dist": 10.8,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 9.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 5
+   },
+   "ticket": {
+    "jpy": 7600,
+    "season": "平日（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.kawaba.co.jp/lift-prices/",
+    "as_of": "2026-11-10",
+    "note": "平日一日券。"
+   },
+   "links": {
+    "ticket": "https://www.kawaba.co.jp/lift-prices/"
    }
   },
   {
@@ -4205,6 +5414,13 @@
     "zh": "菅平",
     "dist": 11.7,
     "ele": 1253
+   },
+   "size": {
+    "piste_km": 5.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 8
    }
   },
   {
@@ -4250,6 +5466,18 @@
     "zh": "小樽",
     "dist": 13.2,
     "ele": 25
+   },
+   "size": {
+    "piste_km": 41.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 24,
+    "lifts": 10
+   },
+   "links": {
+    "ticket": "https://www.kiroro.co.jp/ja/lift_price/",
+    "status": "https://www.kiroro.co.jp/ja/dashboard/"
    }
   },
   {
@@ -4271,6 +5499,14 @@
     "zh": "開田高原",
     "dist": 6.8,
     "ele": 1130
+   },
+   "size": {
+    "piste_km": 7.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 4
    }
   },
   {
@@ -4291,6 +5527,13 @@
     "zh": "夕張",
     "dist": 17.4,
     "ele": 293
+   },
+   "size": {
+    "piste_km": 1.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -4312,6 +5555,14 @@
     "zh": "飯山",
     "dist": 11.6,
     "ele": 313
+   },
+   "size": {
+    "piste_km": 5.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 10,
+    "lifts": 11
    }
   },
   {
@@ -4393,6 +5644,13 @@
     "zh": "小出",
     "dist": 1.1,
     "ele": 98
+   },
+   "size": {
+    "piste_km": 2.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -4413,6 +5671,13 @@
     "zh": "阿寒湖畔",
     "dist": 1.8,
     "ele": 426
+   },
+   "size": {
+    "piste_km": 2.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -4434,6 +5699,13 @@
     "zh": "幌加內",
     "dist": 2.0,
     "ele": 159
+   },
+   "size": {
+    "piste_km": 2.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -4457,6 +5729,13 @@
     "zh": "飯田",
     "dist": 24.7,
     "ele": 516
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -4478,6 +5757,9 @@
     "zh": "小出",
     "dist": 12.1,
     "ele": 98
+   },
+   "links": {
+    "ticket": "http://koshikogen.com/fee/"
    }
   },
   {
@@ -4519,6 +5801,13 @@
     "zh": "赤名",
     "dist": 7.8,
     "ele": 444
+   },
+   "size": {
+    "piste_km": 3.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -4555,7 +5844,18 @@
    ],
    "roma": "suki kuju",
    "osm": "way/1086115253",
-   "web": "https://www.kujyuski.co.jp/"
+   "web": "https://www.kujyuski.co.jp/",
+   "size": {
+    "piste_km": 2.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 3
+   },
+   "links": {
+    "ticket": "https://www.kujyuski.co.jp/price"
+   }
   },
   {
    "id": "kuma-ski-land",
@@ -4579,6 +5879,16 @@
     "zh": "松山",
     "dist": 16.6,
     "ele": 32
+   },
+   "size": {
+    "piste_km": 1.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
+   },
+   "links": {
+    "ticket": "https://kumax.co.jp/page/price.html"
    }
   },
   {
@@ -4599,6 +5909,14 @@
     "zh": "祭畤",
     "dist": 9.8,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 4.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 8,
+    "lifts": 3
    }
   },
   {
@@ -4619,6 +5937,14 @@
     "zh": "米澤",
     "dist": 13.8,
     "ele": 245
+   },
+   "size": {
+    "piste_km": 3.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 4
    }
   },
   {
@@ -4643,6 +5969,14 @@
     "zh": "新川",
     "dist": 16.8,
     "ele": 265
+   },
+   "size": {
+    "piste_km": 7.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 3
    }
   },
   {
@@ -4667,6 +6001,16 @@
     "zh": "信濃町",
     "dist": 3.9,
     "ele": 685
+   },
+   "size": {
+    "piste_km": 7.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 6
+   },
+   "links": {
+    "ticket": "https://kurohime-kogen.co.jp/winter/ticket/"
    }
   },
   {
@@ -4692,6 +6036,14 @@
     "zh": "諏訪",
     "dist": 11.0,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 7.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 5
    }
   },
   {
@@ -4716,6 +6068,14 @@
     "zh": "草津",
     "dist": 2.2,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 5.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 7
    }
   },
   {
@@ -4750,6 +6110,17 @@
     "zh": "今津",
     "dist": 12.3,
     "ele": 88
+   },
+   "size": {
+    "piste_km": 1.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 2
+   },
+   "links": {
+    "ticket": "https://kutsuki-snowpark.com/price"
    }
   },
   {
@@ -4771,6 +6142,25 @@
     "zh": "九頭龍",
     "dist": 1.8,
     "ele": 436
+   },
+   "size": {
+    "piste_km": 3.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 4
+   },
+   "ticket": {
+    "jpy": 4000,
+    "season": "土日祝一日券",
+    "label": "成人一日券",
+    "source": "https://kuzuryu-skiland.com/price/",
+    "as_of": "2026-11-10",
+    "note": "平日是 3,000 円。中學生以上。"
+   },
+   "links": {
+    "ticket": "https://kuzuryu-skiland.com/price/"
    }
   },
   {
@@ -4812,6 +6202,13 @@
     "zh": "角館",
     "dist": 15.7,
     "ele": 56
+   },
+   "size": {
+    "piste_km": 5.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -4833,6 +6230,13 @@
     "zh": "關山",
     "dist": 5.3,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 2.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -4858,6 +6262,14 @@
     "zh": "豬苗代",
     "dist": 4.0,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 2.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 2
    }
   },
   {
@@ -4882,6 +6294,14 @@
     "zh": "信濃町",
     "dist": 8.7,
     "ele": 685
+   },
+   "size": {
+    "piste_km": 34.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 31,
+    "lifts": 9
    }
   },
   {
@@ -4906,6 +6326,14 @@
     "zh": "湯澤",
     "dist": 4.6,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 16.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 10
    }
   },
   {
@@ -4948,6 +6376,14 @@
     "zh": "飯山",
     "dist": 7.1,
     "ele": 313
+   },
+   "size": {
+    "piste_km": 7.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 5
    }
   },
   {
@@ -4968,6 +6404,13 @@
     "zh": "兎和野高原",
     "dist": 9.3,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 1.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -4989,6 +6432,17 @@
     "zh": "草津",
     "dist": 8.4,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 8.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 14,
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://www.princehotels.co.jp/ski/manza/winter/lift/"
    }
   },
   {
@@ -5010,6 +6464,17 @@
     "zh": "奧日光",
     "dist": 16.2,
     "ele": 1292
+   },
+   "size": {
+    "piste_km": 10.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 17,
+    "lifts": 8
+   },
+   "links": {
+    "ticket": "https://www.marunuma.jp/winter/ticket/"
    }
   },
   {
@@ -5031,6 +6496,13 @@
     "zh": "留萠",
     "dist": 17.2,
     "ele": 24
+   },
+   "size": {
+    "piste_km": 3.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -5051,6 +6523,13 @@
     "zh": "十日町",
     "dist": 10.8,
     "ele": 170
+   },
+   "size": {
+    "piste_km": 2.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -5112,6 +6591,13 @@
     "zh": "祭畤",
     "dist": 0.4,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 1.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -5136,6 +6622,16 @@
     "zh": "八幡",
     "dist": 23.8,
     "ele": 774
+   },
+   "size": {
+    "piste_km": 6.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://www.megahira.co.jp/ski/price/"
    }
   },
   {
@@ -5161,6 +6657,17 @@
     "zh": "長瀧",
     "dist": 18.1,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 12.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 12,
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://www.meihoski.co.jp/price/"
    }
   },
   {
@@ -5181,6 +6688,13 @@
     "zh": "芽室",
     "dist": 9.0,
     "ele": 90
+   },
+   "size": {
+    "piste_km": 3.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -5205,6 +6719,13 @@
     "zh": "開田高原",
     "dist": 7.9,
     "ele": 1130
+   },
+   "size": {
+    "piste_km": 6.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -5267,6 +6788,13 @@
     "zh": "北見枝幸",
     "dist": 1.8,
     "ele": 7
+   },
+   "size": {
+    "piste_km": 1.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -5287,6 +6815,13 @@
     "zh": "兎和野高原",
     "dist": 5.3,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -5308,6 +6843,13 @@
     "zh": "津川",
     "dist": 6.8,
     "ele": 100
+   },
+   "size": {
+    "piste_km": 4.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -5330,6 +6872,13 @@
     "zh": "藤原",
     "dist": 2.0,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 7.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -5350,6 +6899,14 @@
     "zh": "幾寅",
     "dist": 1.9,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 3.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 2
    }
   },
   {
@@ -5370,6 +6927,13 @@
     "zh": "菅平",
     "dist": 4.0,
     "ele": 1253
+   },
+   "size": {
+    "piste_km": 7.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -5393,6 +6957,13 @@
     "zh": "和田山",
     "dist": 27.3,
     "ele": 80
+   },
+   "size": {
+    "piste_km": 2.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -5414,6 +6985,14 @@
     "zh": "豬苗代",
     "dist": 17.4,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 7.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 11,
+    "lifts": 3
    }
   },
   {
@@ -5456,6 +7035,17 @@
     "zh": "白石",
     "dist": 14.8,
     "ele": 86
+   },
+   "size": {
+    "piste_km": 13.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 12,
+    "lifts": 9
+   },
+   "links": {
+    "ticket": "https://eboshi.co.jp/winter/ticket_web/"
    }
   },
   {
@@ -5477,6 +7067,14 @@
     "zh": "茂庭",
     "dist": 12.9,
     "ele": 200
+   },
+   "size": {
+    "piste_km": 4.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 4
    }
   },
   {
@@ -5498,6 +7096,17 @@
     "zh": "白石",
     "dist": 10.8,
     "ele": 86
+   },
+   "size": {
+    "piste_km": 5.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://www.nposki.com/lift/"
    }
   },
   {
@@ -5519,6 +7128,14 @@
     "zh": "白石",
     "dist": 16.9,
     "ele": 86
+   },
+   "size": {
+    "piste_km": 8.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 3
    }
   },
   {
@@ -5543,6 +7160,16 @@
     "zh": "大朝",
     "dist": 7.4,
     "ele": 399
+   },
+   "size": {
+    "piste_km": 23.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://www.mizuhohighland.com/price/"
    }
   },
   {
@@ -5585,6 +7212,13 @@
     "zh": "高山",
     "dist": 11.0,
     "ele": 560
+   },
+   "size": {
+    "piste_km": 4.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -5689,6 +7323,14 @@
     "zh": "夕張",
     "dist": 2.1,
     "ele": 293
+   },
+   "size": {
+    "piste_km": 24.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 3
    }
   },
   {
@@ -5710,6 +7352,13 @@
     "zh": "青森大谷",
     "dist": 9.1,
     "ele": 198
+   },
+   "size": {
+    "piste_km": 5.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -5731,6 +7380,13 @@
     "zh": "みなかみ",
     "dist": 5.9,
     "ele": 524
+   },
+   "size": {
+    "piste_km": 6.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -5754,6 +7410,13 @@
     "zh": "十日町",
     "dist": 12.6,
     "ele": 170
+   },
+   "size": {
+    "piste_km": 5.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -5774,6 +7437,13 @@
     "zh": "小出",
     "dist": 12.4,
     "ele": 98
+   },
+   "size": {
+    "piste_km": 10.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -5815,6 +7485,13 @@
     "zh": "むつ",
     "dist": 6.7,
     "ele": 3
+   },
+   "size": {
+    "piste_km": 2.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -5840,6 +7517,25 @@
     "zh": "信濃町",
     "dist": 8.1,
     "ele": 685
+   },
+   "size": {
+    "piste_km": 19.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 5
+   },
+   "ticket": {
+    "jpy": 9000,
+    "season": "官網冬季頁（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.princehotels.co.jp/ski/myoko/winter/lift/",
+    "as_of": "2026-11-10",
+    "note": "一般價。會員價較低。"
+   },
+   "links": {
+    "ticket": "https://www.princehotels.co.jp/ski/myoko/winter/lift/"
    }
   },
   {
@@ -5863,6 +7559,14 @@
     "zh": "湯澤",
     "dist": 16.8,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 19.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 24,
+    "lifts": 14
    }
   },
   {
@@ -5924,6 +7628,14 @@
     "zh": "富良野",
     "dist": 8.8,
     "ele": 174
+   },
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 1
    }
   },
   {
@@ -5964,6 +7676,13 @@
     "zh": "津南",
     "dist": 5.3,
     "ele": 452
+   },
+   "size": {
+    "piste_km": 6.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -6026,6 +7745,14 @@
     "zh": "湯澤",
     "dist": 5.7,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 2.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 4
    }
   },
   {
@@ -6046,6 +7773,14 @@
     "zh": "花卷",
     "dist": 12.7,
     "ele": 90
+   },
+   "size": {
+    "piste_km": 4.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 2
    }
   },
   {
@@ -6089,6 +7824,13 @@
     "zh": "湯澤",
     "dist": 2.0,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 4.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -6109,6 +7851,13 @@
     "zh": "名寄",
     "dist": 6.3,
     "ele": 89
+   },
+   "size": {
+    "piste_km": 8.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -6134,6 +7883,13 @@
     "zh": "津南",
     "dist": 4.9,
     "ele": 452
+   },
+   "size": {
+    "piste_km": 6.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -6155,6 +7911,13 @@
     "zh": "福島",
     "dist": 18.2,
     "ele": 67
+   },
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -6176,6 +7939,13 @@
     "zh": "奧日光",
     "dist": 10.7,
     "ele": 1292
+   },
+   "size": {
+    "piste_km": 2.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -6197,6 +7967,16 @@
     "zh": "下關",
     "dist": 20.1,
     "ele": 33
+   },
+   "size": {
+    "piste_km": 3.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
+   },
+   "links": {
+    "ticket": "https://www.ninox.co.jp/lift/"
    }
   },
   {
@@ -6218,6 +7998,14 @@
     "zh": "幾寅",
     "dist": 12.7,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 15.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 19,
+    "lifts": 4
    }
   },
   {
@@ -6242,6 +8030,14 @@
     "zh": "蘭越",
     "dist": 9.0,
     "ele": 39
+   },
+   "size": {
+    "piste_km": 17.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 6
    }
   },
   {
@@ -6276,6 +8072,26 @@
     "zh": "俱知安",
     "dist": 7.7,
     "ele": 176
+   },
+   "size": {
+    "piste_km": 84.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 80,
+    "lifts": 26
+   },
+   "ticket": {
+    "jpy": 13500,
+    "season": "2026-27 旺季（12/24–2/28）",
+    "label": "成人一日券",
+    "source": "https://www.niseko.ne.jp/ja/lift/",
+    "as_of": "2026-11-10",
+    "note": "窗口價。通常期 12,600 円，季初與春季 8,800 円。"
+   },
+   "links": {
+    "ticket": "https://www.niseko.ne.jp/ja/lift/",
+    "status": "https://www.niseko.ne.jp/ja/niseko-lift-status/"
    }
   },
   {
@@ -6296,6 +8112,13 @@
     "zh": "左澤",
     "dist": 9.5,
     "ele": 133
+   },
+   "size": {
+    "piste_km": 1.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -6317,6 +8140,13 @@
     "zh": "大沼",
     "dist": 8.4,
     "ele": 165
+   },
+   "size": {
+    "piste_km": 1.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -6341,6 +8171,14 @@
     "zh": "みなかみ",
     "dist": 4.5,
     "ele": 524
+   },
+   "size": {
+    "piste_km": 5.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 4
    }
   },
   {
@@ -6362,6 +8200,14 @@
     "zh": "北見",
     "dist": 12.2,
     "ele": 104
+   },
+   "size": {
+    "piste_km": 3.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 2
    }
   },
   {
@@ -6386,6 +8232,25 @@
     "zh": "野澤溫泉",
     "dist": 2.5,
     "ele": 576
+   },
+   "size": {
+    "piste_km": 41.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 38,
+    "lifts": 15
+   },
+   "ticket": {
+    "jpy": 7800,
+    "season": "2026-27 通常（12/19–3/28）",
+    "label": "成人一日券",
+    "source": "https://nozawaski.com/winter/lift_price/",
+    "as_of": "2026-11-10",
+    "note": "初滑期間另有 5,600 円。"
+   },
+   "links": {
+    "ticket": "https://nozawaski.com/winter/lift_price/"
    }
   },
   {
@@ -6427,6 +8292,14 @@
     "zh": "豬苗代",
     "dist": 13.9,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 9.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 14,
+    "lifts": 6
    }
   },
   {
@@ -6453,6 +8326,14 @@
     "zh": "藤原",
     "dist": 13.2,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 9.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 14,
+    "lifts": 6
    }
   },
   {
@@ -6478,6 +8359,13 @@
     "zh": "柳ケ瀨",
     "dist": 10.3,
     "ele": 220
+   },
+   "size": {
+    "piste_km": 3.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -6498,6 +8386,13 @@
     "zh": "角館",
     "dist": 13.0,
     "ele": 56
+   },
+   "size": {
+    "piste_km": 3.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -6559,6 +8454,14 @@
     "zh": "兎和野高原",
     "dist": 6.6,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 4
    }
   },
   {
@@ -6640,6 +8543,13 @@
     "zh": "大山",
     "dist": 5.8,
     "ele": 875
+   },
+   "size": {
+    "piste_km": 3.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -6660,6 +8570,13 @@
     "zh": "奧中山",
     "dist": 4.7,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 6.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -6694,6 +8611,25 @@
     "zh": "檜枝岐",
     "dist": 20.6,
     "ele": 973
+   },
+   "size": {
+    "piste_km": 6.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 5
+   },
+   "ticket": {
+    "jpy": 5500,
+    "season": "官網一日券（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "http://www.okutadami.co.jp/ski/price.html",
+    "as_of": "2026-11-10",
+    "note": "成人一日券。兩日券是 9,400 円。"
+   },
+   "links": {
+    "ticket": "http://www.okutadami.co.jp/ski/price.html"
    }
   },
   {
@@ -6714,6 +8650,13 @@
     "zh": "みなかみ",
     "dist": 4.9,
     "ele": 524
+   },
+   "size": {
+    "piste_km": 5.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 6
    }
   },
   {
@@ -6755,6 +8698,13 @@
     "zh": "倉吉",
     "dist": 22.1,
     "ele": 8
+   },
+   "size": {
+    "piste_km": 2.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -6776,6 +8726,14 @@
     "zh": "向町",
     "dist": 10.6,
     "ele": 212
+   },
+   "size": {
+    "piste_km": 4.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 8,
+    "lifts": 6
    }
   },
   {
@@ -6833,6 +8791,14 @@
     "zh": "開田高原",
     "dist": 10.8,
     "ele": 1130
+   },
+   "size": {
+    "piste_km": 18.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 3
    }
   },
   {
@@ -6854,6 +8820,13 @@
     "zh": "加賀中津原",
     "dist": 12.9,
     "ele": 65
+   },
+   "size": {
+    "piste_km": 1.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -6875,6 +8848,14 @@
     "zh": "大瀧",
     "dist": 14.9,
     "ele": 390
+   },
+   "size": {
+    "piste_km": 1.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 1
    }
   },
   {
@@ -6896,6 +8877,13 @@
     "zh": "八幡",
     "dist": 5.5,
     "ele": 774
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -6952,6 +8940,18 @@
     "zh": "八幡",
     "dist": 12.7,
     "ele": 774
+   },
+   "size": {
+    "piste_km": 9.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 15,
+    "lifts": 8
+   },
+   "links": {
+    "ticket": "https://osorakan.co.jp/winter/lift-ticket/",
+    "status": "https://osorakan.co.jp/winter/lift-status-map/"
    }
   },
   {
@@ -6972,6 +8972,14 @@
     "zh": "小樽",
     "dist": 3.7,
     "ele": 25
+   },
+   "size": {
+    "piste_km": 4.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 3
    }
   },
   {
@@ -7039,6 +9047,13 @@
     "zh": "菅平",
     "dist": 11.3,
     "ele": 1253
+   },
+   "size": {
+    "piste_km": 15.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 7
    }
   },
   {
@@ -7064,6 +9079,25 @@
     "zh": "諏訪",
     "dist": 18.6,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 5.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 8,
+    "lifts": 3
+   },
+   "ticket": {
+    "jpy": 6500,
+    "season": "2026-27",
+    "label": "成人一日券",
+    "source": "https://www.pilatus.jp/price/",
+    "as_of": "2026-11-10",
+    "note": "中學生以上。"
+   },
+   "links": {
+    "ticket": "https://www.pilatus.jp/price/"
    }
   },
   {
@@ -7084,6 +9118,14 @@
     "zh": "和寒",
     "dist": 12.8,
     "ele": 150
+   },
+   "size": {
+    "piste_km": 10.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 11,
+    "lifts": 4
    }
   },
   {
@@ -7104,6 +9146,13 @@
     "zh": "長萬部",
     "dist": 15.2,
     "ele": 6
+   },
+   "size": {
+    "piste_km": 4.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -7130,6 +9179,26 @@
     "zh": "輕井澤",
     "dist": 8.7,
     "ele": 999
+   },
+   "size": {
+    "piste_km": 8.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 8
+   },
+   "ticket": {
+    "jpy": 13000,
+    "season": "官網現地購買一日券（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.princehotels.co.jp/ski/karuizawa/winter/lift/",
+    "as_of": "2026-11-10",
+    "note": "頁面上的成人現地價。"
+   },
+   "links": {
+    "ticket": "https://www.princehotels.co.jp/ski/karuizawa/winter/lift/",
+    "status": "https://www.princehotels.co.jp/ski/karuizawa/informations/?tab=operation"
    }
   },
   {
@@ -7150,6 +9219,13 @@
     "zh": "高野",
     "dist": 2.7,
     "ele": 570
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -7207,6 +9283,17 @@
     "zh": "神戶",
     "dist": 8.3,
     "ele": 5
+   },
+   "ticket": {
+    "jpy": 3300,
+    "season": "土日祝",
+    "label": "成人一日券",
+    "source": "https://www.rokkosan.com/ski/fee/",
+    "as_of": "2026-11-10",
+    "note": "平日是 1,600 円。大人與小孩同價。"
+   },
+   "links": {
+    "ticket": "https://www.rokkosan.com/ski/fee/"
    }
   },
   {
@@ -7253,6 +9340,25 @@
     "zh": "喜茂別",
     "dist": 7.4,
     "ele": 264
+   },
+   "size": {
+    "piste_km": 33.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 31,
+    "lifts": 12
+   },
+   "ticket": {
+    "jpy": 16700,
+    "season": "官網現行窗口價（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://rusutsu.com/winter-lift-tickets/",
+    "as_of": "2026-11-10",
+    "note": "成人 19–64 歲。線上價是 13,200 円。"
+   },
+   "links": {
+    "ticket": "https://rusutsu.com/winter-lift-tickets/"
    }
   },
   {
@@ -7277,6 +9383,25 @@
     "zh": "飯山",
     "dist": 13.7,
     "ele": 313
+   },
+   "size": {
+    "piste_km": 11.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 6
+   },
+   "ticket": {
+    "jpy": 6000,
+    "season": "2026/12/19–2027/3/22 平日",
+    "label": "成人一日券",
+    "source": "https://ryuoo.com/winter/price_w/",
+    "as_of": "2026-11-10",
+    "note": "平日一日券。"
+   },
+   "links": {
+    "ticket": "https://ryuoo.com/winter/price_w/"
    }
   },
   {
@@ -7322,6 +9447,14 @@
     "zh": "新得",
     "dist": 11.6,
     "ele": 178
+   },
+   "size": {
+    "piste_km": 23.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 20,
+    "lifts": 9
    }
   },
   {
@@ -7343,6 +9476,14 @@
     "zh": "津南",
     "dist": 11.0,
     "ele": 452
+   },
+   "size": {
+    "piste_km": 6.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 3
    }
   },
   {
@@ -7364,6 +9505,13 @@
     "zh": "輕井澤",
     "dist": 6.8,
     "ele": 999
+   },
+   "size": {
+    "piste_km": 4.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 8
    }
   },
   {
@@ -7385,6 +9533,16 @@
     "zh": "白川",
     "dist": 16.8,
     "ele": 478
+   },
+   "size": {
+    "piste_km": 4.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
+   },
+   "links": {
+    "ticket": "https://www.sam-hakusan.com/ticket/"
    }
   },
   {
@@ -7406,6 +9564,17 @@
     "zh": "登別",
     "dist": 7.2,
     "ele": 197
+   },
+   "size": {
+    "piste_km": 5.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 8,
+    "lifts": 3
+   },
+   "links": {
+    "ticket": "https://sanlaiva.com/price"
    }
   },
   {
@@ -7427,6 +9596,14 @@
     "zh": "西會津",
     "dist": 25.8,
     "ele": 165
+   },
+   "size": {
+    "piste_km": 3.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 2
    }
   },
   {
@@ -7448,6 +9625,13 @@
     "zh": "旭川",
     "dist": 5.8,
     "ele": 120
+   },
+   "size": {
+    "piste_km": 5.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -7469,6 +9653,14 @@
     "zh": "札幌",
     "dist": 5.5,
     "ele": 17
+   },
+   "size": {
+    "piste_km": 9.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 16,
+    "lifts": 6
    }
   },
   {
@@ -7490,6 +9682,14 @@
     "zh": "小樽",
     "dist": 12.9,
     "ele": 25
+   },
+   "size": {
+    "piste_km": 31.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 14,
+    "lifts": 4
    }
   },
   {
@@ -7514,6 +9714,14 @@
     "zh": "札幌",
     "dist": 4.9,
     "ele": 17
+   },
+   "size": {
+    "piste_km": 8.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 6
    }
   },
   {
@@ -7539,6 +9747,18 @@
     "zh": "札幌",
     "dist": 10.5,
     "ele": 17
+   },
+   "size": {
+    "piste_km": 14.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 14,
+    "lifts": 12
+   },
+   "links": {
+    "ticket": "https://sapporo-teine.com/snow/lang/en/tickets/",
+    "status": "https://sapporo-teine.com/snow/lang/en/trailstatus"
    }
   },
   {
@@ -7622,6 +9842,16 @@
     "zh": "關山",
     "dist": 6.5,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
+   },
+   "links": {
+    "ticket": "http://sekionsen.jp/price.html"
    }
   },
   {
@@ -7682,6 +9912,13 @@
     "zh": "根室中標津",
     "dist": 18.6,
     "ele": 65
+   },
+   "size": {
+    "piste_km": 2.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -7742,6 +9979,14 @@
     "zh": "草津",
     "dist": 14.1,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 2.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 2
    }
   },
   {
@@ -7762,6 +10007,14 @@
     "zh": "草津",
     "dist": 14.0,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 2.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 2
    }
   },
   {
@@ -7782,6 +10035,14 @@
     "zh": "草津",
     "dist": 13.9,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 5.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 1
    }
   },
   {
@@ -7802,6 +10063,14 @@
     "zh": "草津",
     "dist": 14.1,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 1.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 2
    }
   },
   {
@@ -7822,6 +10091,14 @@
     "zh": "草津",
     "dist": 15.5,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 2.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 2
    }
   },
   {
@@ -7842,6 +10119,14 @@
     "zh": "草津",
     "dist": 14.7,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 5.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 4
    }
   },
   {
@@ -7862,6 +10147,14 @@
     "zh": "草津",
     "dist": 15.9,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 5.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 2
    }
   },
   {
@@ -7883,6 +10176,14 @@
     "zh": "草津",
     "dist": 10.8,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 8.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 7
    }
   },
   {
@@ -7903,6 +10204,14 @@
     "zh": "草津",
     "dist": 14.2,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 2.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 2
    }
   },
   {
@@ -7923,6 +10232,14 @@
     "zh": "草津",
     "dist": 14.7,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 5.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 2
    }
   },
   {
@@ -7944,6 +10261,14 @@
     "zh": "野澤溫泉",
     "dist": 17.2,
     "ele": 576
+   },
+   "size": {
+    "piste_km": 15.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 6
    }
   },
   {
@@ -7964,6 +10289,14 @@
     "zh": "草津",
     "dist": 8.1,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 3.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 2
    }
   },
   {
@@ -7984,6 +10317,14 @@
     "zh": "草津",
     "dist": 14.4,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 2.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 1
    }
   },
   {
@@ -8004,6 +10345,14 @@
     "zh": "草津",
     "dist": 14.4,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 5.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 3
    }
   },
   {
@@ -8027,6 +10376,13 @@
     "zh": "草津",
     "dist": 14.6,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 2.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -8047,6 +10403,14 @@
     "zh": "草津",
     "dist": 13.9,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 4.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 2
    }
   },
   {
@@ -8068,6 +10432,17 @@
     "zh": "草津",
     "dist": 16.4,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 16.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 14,
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://www.princehotels.co.jp/ski/shiga/winter/lift/"
    }
   },
   {
@@ -8088,6 +10463,14 @@
     "zh": "草津",
     "dist": 9.6,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 10.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 9,
+    "lifts": 4
    }
   },
   {
@@ -8209,6 +10592,13 @@
     "zh": "開田高原",
     "dist": 16.3,
     "ele": 1130
+   },
+   "size": {
+    "piste_km": 8.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -8230,6 +10620,14 @@
     "zh": "新得",
     "dist": 1.9,
     "ele": 178
+   },
+   "size": {
+    "piste_km": 2.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 1
    }
   },
   {
@@ -8274,6 +10672,14 @@
     "zh": "諏訪",
     "dist": 14.7,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 5.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 4
    }
   },
   {
@@ -8295,6 +10701,14 @@
     "zh": "諏訪",
     "dist": 17.9,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 10.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 3
    }
   },
   {
@@ -8319,6 +10733,17 @@
     "zh": "諏訪",
     "dist": 14.1,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 2
+   },
+   "links": {
+    "ticket": "https://www.shirakabaresort.jp/ticket/"
    }
   },
   {
@@ -8340,6 +10765,13 @@
     "zh": "諏訪",
     "dist": 13.1,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 5.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -8380,6 +10812,13 @@
     "zh": "長瀧",
     "dist": 10.0,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 6.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -8400,6 +10839,13 @@
     "zh": "左澤",
     "dist": 15.4,
     "ele": 133
+   },
+   "size": {
+    "piste_km": 1.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -8443,6 +10889,25 @@
     "zh": "雫石",
     "dist": 10.9,
     "ele": 195
+   },
+   "size": {
+    "piste_km": 20.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 10
+   },
+   "ticket": {
+    "jpy": 6800,
+    "season": "官網冬季頁（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.princehotels.co.jp/ski/shizukuishi/winter/lift/",
+    "as_of": "2026-11-10",
+    "note": "一般成人一日券。"
+   },
+   "links": {
+    "ticket": "https://www.princehotels.co.jp/ski/shizukuishi/winter/lift/",
+    "status": "https://www.princehotels.co.jp/ski/shizukuishi/informations/?tab=operation"
    }
   },
   {
@@ -8504,6 +10969,13 @@
     "zh": "大朝",
     "dist": 3.1,
     "ele": 399
+   },
+   "size": {
+    "piste_km": 3.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -8527,6 +10999,14 @@
     "zh": "湯本",
     "dist": 7.7,
     "ele": 646
+   },
+   "size": {
+    "piste_km": 2.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 1
    }
   },
   {
@@ -8548,6 +11028,13 @@
     "zh": "兎和野高原",
     "dist": 4.4,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 5.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -8585,6 +11072,14 @@
     "zh": "藤原",
     "dist": 16.6,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 6.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 6
    }
   },
   {
@@ -8606,6 +11101,14 @@
     "zh": "河口湖",
     "dist": 22.1,
     "ele": 860
+   },
+   "size": {
+    "piste_km": 1.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 3
    }
   },
   {
@@ -8627,6 +11130,13 @@
     "zh": "橫田",
     "dist": 17.5,
     "ele": 369
+   },
+   "size": {
+    "piste_km": 3.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -8671,6 +11181,13 @@
     "zh": "小樽",
     "dist": 10.1,
     "ele": 25
+   },
+   "size": {
+    "piste_km": 2.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -8689,7 +11206,14 @@
    ],
    "roma": "odaodasolfa solfaodasukigerende",
    "osm": "way/1086288219",
-   "web": "http://www.sol-fa.com/"
+   "web": "http://www.sol-fa.com/",
+   "size": {
+    "piste_km": 2.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
+   }
   },
   {
    "id": "soma-romantopia-ski-area",
@@ -8729,6 +11253,13 @@
     "zh": "二戶",
     "dist": 14.7,
     "ele": 87
+   },
+   "size": {
+    "piste_km": 2.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -8774,6 +11305,17 @@
     "zh": "新川",
     "dist": 14.6,
     "ele": 265
+   },
+   "size": {
+    "piste_km": 10.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 4
+   },
+   "links": {
+    "status": "https://www.springvalley.co.jp/winter/gelande/lift"
    }
   },
   {
@@ -8798,6 +11340,14 @@
     "zh": "新川",
     "dist": 14.6,
     "ele": 265
+   },
+   "size": {
+    "piste_km": 2.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 5
    }
   },
   {
@@ -8822,6 +11372,14 @@
     "zh": "菅平",
     "dist": 2.7,
     "ele": 1253
+   },
+   "size": {
+    "piste_km": 10.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 5
    }
   },
   {
@@ -8844,6 +11402,14 @@
     "zh": "菅平",
     "dist": 0.9,
     "ele": 1253
+   },
+   "size": {
+    "piste_km": 12.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 8
    }
   },
   {
@@ -8868,6 +11434,14 @@
     "zh": "菅平",
     "dist": 1.8,
     "ele": 1253
+   },
+   "size": {
+    "piste_km": 15.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 10,
+    "lifts": 6
    }
   },
   {
@@ -8889,6 +11463,13 @@
     "zh": "守門",
     "dist": 3.5,
     "ele": 222
+   },
+   "size": {
+    "piste_km": 5.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -8933,6 +11514,17 @@
     "zh": "諏訪",
     "dist": 29.1,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 16.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 12,
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://www.sunmeadows.co.jp/winter/ticket/lift/"
    }
   },
   {
@@ -8975,6 +11567,9 @@
     "zh": "只見",
     "dist": 0.7,
     "ele": 377
+   },
+   "links": {
+    "ticket": "https://tadamikousya.sakura.ne.jp/ikoiforest/price/"
    }
   },
   {
@@ -8996,6 +11591,13 @@
     "zh": "秋田",
     "dist": 13.8,
     "ele": 6
+   },
+   "size": {
+    "piste_km": 5.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -9017,6 +11619,17 @@
     "zh": "下關",
     "dist": 11.2,
     "ele": 33
+   },
+   "size": {
+    "piste_km": 11.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 8
+   },
+   "links": {
+    "ticket": "https://tainairesort.jp/price.html"
    }
   },
   {
@@ -9058,6 +11671,14 @@
     "zh": "兎和野高原",
     "dist": 12.5,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 2.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 4,
+    "lifts": 2
    }
   },
   {
@@ -9082,6 +11703,13 @@
     "zh": "輕井澤",
     "dist": 10.5,
     "ele": 999
+   },
+   "size": {
+    "piste_km": 4.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -9125,6 +11753,14 @@
     "zh": "長瀧",
     "dist": 9.0,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 16.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 4
    }
   },
   {
@@ -9250,6 +11886,16 @@
     "zh": "藤原",
     "dist": 9.2,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 8.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 6
+   },
+   "links": {
+    "ticket": "https://www.tambara.co.jp/winter/ticket/buy/"
    }
   },
   {
@@ -9274,6 +11920,17 @@
     "zh": "信濃町",
     "dist": 7.6,
     "ele": 685
+   },
+   "size": {
+    "piste_km": 18.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 20,
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://www.tangram.jp/ski/ticket/ticket.php"
    }
   },
   {
@@ -9319,6 +11976,13 @@
     "zh": "豬谷",
     "dist": 19.9,
     "ele": 215
+   },
+   "size": {
+    "piste_km": 10.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 8
    }
   },
   {
@@ -9340,6 +12004,13 @@
     "zh": "鹿角",
     "dist": 16.7,
     "ele": 123
+   },
+   "size": {
+    "piste_km": 1.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -9365,6 +12036,14 @@
     "zh": "雫石",
     "dist": 18.9,
     "ele": 195
+   },
+   "size": {
+    "piste_km": 13.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 6
    }
   },
   {
@@ -9385,6 +12064,14 @@
     "zh": "新川",
     "dist": 14.1,
     "ele": 265
+   },
+   "size": {
+    "piste_km": 7.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 12,
+    "lifts": 5
    }
   },
   {
@@ -9406,6 +12093,14 @@
     "zh": "湯澤",
     "dist": 13.7,
     "ele": 74
+   },
+   "size": {
+    "piste_km": 2.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 2,
+    "lifts": 2
    }
   },
   {
@@ -9427,6 +12122,14 @@
     "zh": "米澤",
     "dist": 16.1,
     "ele": 245
+   },
+   "size": {
+    "piste_km": 7.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 5,
+    "lifts": 4
    }
   },
   {
@@ -9469,6 +12172,13 @@
     "zh": "佐賀",
     "dist": 17.6,
     "ele": 6
+   },
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -9514,6 +12224,14 @@
     "zh": "飯山",
     "dist": 6.9,
     "ele": 313
+   },
+   "size": {
+    "piste_km": 9.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 8,
+    "lifts": 6
    }
   },
   {
@@ -9558,6 +12276,14 @@
     "zh": "信濃町",
     "dist": 10.6,
     "ele": 685
+   },
+   "size": {
+    "piste_km": 16.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 19,
+    "lifts": 7
    }
   },
   {
@@ -9579,6 +12305,16 @@
     "zh": "野澤溫泉",
     "dist": 6.3,
     "ele": 576
+   },
+   "size": {
+    "piste_km": 12.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 7
+   },
+   "links": {
+    "ticket": "https://togari.jp/winter/price/"
    }
   },
   {
@@ -9593,7 +12329,14 @@
    "aliases": [],
    "roma": "suki",
    "osm": "way/1188616490",
-   "web": "http://www.woodpark.jp/snow/index.html"
+   "web": "http://www.woodpark.jp/snow/index.html",
+   "size": {
+    "piste_km": 2.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
+   }
   },
   {
    "id": "tomamu-ski-resort",
@@ -9619,6 +12362,14 @@
     "zh": "幾寅",
     "dist": 11.6,
     "ele": 350
+   },
+   "size": {
+    "piste_km": 46.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 32,
+    "lifts": 5
    }
   },
   {
@@ -9640,6 +12391,9 @@
     "zh": "砺波",
     "dist": 6.4,
     "ele": 69
+   },
+   "links": {
+    "ticket": "https://ski.yumeno-taira.com/fee/"
    }
   },
   {
@@ -9704,6 +12458,14 @@
     "zh": "白馬",
     "dist": 6.4,
     "ele": 703
+   },
+   "size": {
+    "piste_km": 34.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 12,
+    "lifts": 15
    }
   },
   {
@@ -9725,6 +12487,14 @@
     "zh": "川渡",
     "dist": 4.1,
     "ele": 170
+   },
+   "size": {
+    "piste_km": 5.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 10,
+    "lifts": 5
    }
   },
   {
@@ -9811,6 +12581,13 @@
     "zh": "兎和野高原",
     "dist": 11.8,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 1.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -9832,6 +12609,13 @@
     "zh": "豬苗代",
     "dist": 9.2,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 2.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -9874,6 +12658,16 @@
     "zh": "大朝",
     "dist": 12.9,
     "ele": 399
+   },
+   "size": {
+    "piste_km": 3.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 6
+   },
+   "links": {
+    "ticket": "https://www.saioto.co.jp/price/"
    }
   },
   {
@@ -9895,6 +12689,14 @@
     "zh": "北見",
     "dist": 7.0,
     "ele": 104
+   },
+   "size": {
+    "piste_km": 2.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 3,
+    "lifts": 2
    }
   },
   {
@@ -9921,6 +12723,13 @@
     "zh": "兎和野高原",
     "dist": 12.5,
     "ele": 540
+   },
+   "size": {
+    "piste_km": 4.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -9989,6 +12798,14 @@
     "zh": "長瀧",
     "dist": 9.3,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 8.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 4
    }
   },
   {
@@ -10052,6 +12869,14 @@
     "zh": "櫛引",
     "dist": 14.4,
     "ele": 33
+   },
+   "size": {
+    "piste_km": 4.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 5
    }
   },
   {
@@ -10072,6 +12897,13 @@
     "zh": "櫛引",
     "dist": 6.2,
     "ele": 33
+   },
+   "size": {
+    "piste_km": 1.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -10113,6 +12945,13 @@
     "zh": "みなかみ",
     "dist": 2.5,
     "ele": 524
+   },
+   "size": {
+    "piste_km": 2.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 5
    }
   },
   {
@@ -10138,6 +12977,26 @@
     "zh": "藤原",
     "dist": 14.2,
     "ele": 700
+   },
+   "size": {
+    "piste_km": 13.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 15,
+    "lifts": 11
+   },
+   "ticket": {
+    "jpy": 7200,
+    "season": "特定日（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.oze-iwakura.co.jp/ski/price/",
+    "as_of": "2026-11-10",
+    "note": "特定日的成人一日券。"
+   },
+   "links": {
+    "ticket": "https://www.oze-iwakura.co.jp/ski/price/",
+    "status": "https://www.oze-iwakura.co.jp/ski/slopeguide/today/"
    }
   },
   {
@@ -10162,6 +13021,14 @@
     "zh": "長瀧",
     "dist": 10.2,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 8.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 5
    }
   },
   {
@@ -10207,6 +13074,13 @@
     "zh": "長瀧",
     "dist": 5.9,
     "ele": 430
+   },
+   "size": {
+    "piste_km": 10.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -10231,6 +13105,14 @@
     "zh": "飯山",
     "dist": 9.4,
     "ele": 313
+   },
+   "size": {
+    "piste_km": 8.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 12,
+    "lifts": 6
    }
   },
   {
@@ -10252,6 +13134,13 @@
     "zh": "開田高原",
     "dist": 11.9,
     "ele": 1130
+   },
+   "size": {
+    "piste_km": 9.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 6
    }
   },
   {
@@ -10273,6 +13162,13 @@
     "zh": "諏訪",
     "dist": 24.2,
     "ele": 760
+   },
+   "size": {
+    "piste_km": 3.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -10294,6 +13190,13 @@
     "zh": "八雲",
     "dist": 5.3,
     "ele": 8
+   },
+   "size": {
+    "piste_km": 1.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -10336,6 +13239,13 @@
     "zh": "小出",
     "dist": 2.8,
     "ele": 98
+   },
+   "size": {
+    "piste_km": 1.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 1
    }
   },
   {
@@ -10378,6 +13288,17 @@
     "zh": "草津",
     "dist": 13.0,
     "ele": 1223
+   },
+   "size": {
+    "piste_km": 12.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 3
+   },
+   "links": {
+    "ticket": "https://yamaboku.co.jp/price/"
    }
   },
   {
@@ -10401,6 +13322,13 @@
     "zh": "向町",
     "dist": 6.9,
     "ele": 212
+   },
+   "size": {
+    "piste_km": 3.4,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 3
    }
   },
   {
@@ -10442,6 +13370,13 @@
     "zh": "矢島",
     "dist": 6.7,
     "ele": 46
+   },
+   "size": {
+    "piste_km": 5.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 2
    }
   },
   {
@@ -10463,6 +13398,13 @@
     "zh": "八幡",
     "dist": 2.3,
     "ele": 774
+   },
+   "size": {
+    "piste_km": 4.3,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 4
    }
   },
   {
@@ -10484,6 +13426,17 @@
     "zh": "今庄",
     "dist": 8.8,
     "ele": 128
+   },
+   "size": {
+    "piste_km": 4.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 7
+   },
+   "links": {
+    "ticket": "http://yogo45.co.jp/price/"
    }
   },
   {
@@ -10504,6 +13457,14 @@
     "zh": "豬苗代",
     "dist": 17.8,
     "ele": 519
+   },
+   "size": {
+    "piste_km": 2.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 1,
+    "lifts": 2
    }
   },
   {
@@ -10546,6 +13507,14 @@
     "zh": "飯山",
     "dist": 10.1,
     "ele": 313
+   },
+   "size": {
+    "piste_km": 6.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 10,
+    "lifts": 4
    }
   },
   {
@@ -10567,6 +13536,17 @@
     "zh": "米澤",
     "dist": 9.7,
     "ele": 245
+   },
+   "size": {
+    "piste_km": 3.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 8,
+    "lifts": 5
+   },
+   "links": {
+    "ticket": "https://www.yonezawa-ski.co.jp/price.html"
    }
   },
   {
@@ -10631,6 +13611,13 @@
     "zh": "湯澤",
     "dist": 1.7,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 5.5,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 6
    }
   },
   {
@@ -10655,6 +13642,24 @@
     "zh": "湯澤",
     "dist": 5.2,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 7.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 7,
+    "lifts": 6
+   },
+   "ticket": {
+    "jpy": 6700,
+    "season": "2026/12/19–2027/3/28",
+    "label": "成人一日券",
+    "source": "https://www.yuzawa-nakazato.com/winter/fee/",
+    "as_of": "2026-11-10"
+   },
+   "links": {
+    "ticket": "https://www.yuzawa-nakazato.com/winter/fee/"
    }
   },
   {
@@ -10676,6 +13681,16 @@
     "zh": "湯澤",
     "dist": 4.8,
     "ele": 340
+   },
+   "size": {
+    "piste_km": 5.2,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "lifts": 10
+   },
+   "links": {
+    "ticket": "https://www.park-resort.com/ski/price/"
    }
   },
   {
@@ -10697,6 +13712,14 @@
     "zh": "山形",
     "dist": 15.7,
     "ele": 153
+   },
+   "size": {
+    "piste_km": 3.6,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 3
    }
   },
   {
@@ -10722,6 +13745,14 @@
     "zh": "山形",
     "dist": 11.7,
     "ele": 153
+   },
+   "size": {
+    "piste_km": 45.0,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 17,
+    "lifts": 36
    }
   },
   {
@@ -10743,6 +13774,14 @@
     "zh": "山形",
     "dist": 14.5,
     "ele": 153
+   },
+   "size": {
+    "piste_km": 1.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 6,
+    "lifts": 2
    }
   }
  ]

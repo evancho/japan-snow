@@ -24,6 +24,7 @@
             <span class="brand-sub">積雪、新雪、這幾天的降雪</span>
           </span>
         </a>
+        <button type="button" class="settings-open" id="settings-open">設定</button>
       </header>
       <div class="tools">
         <label class="search">
@@ -39,6 +40,9 @@
               <option value="d24">24 小時新雪</option>
               <option value="d48">48 小時新雪</option>
               <option value="fc3">未來 3 日預報</option>
+              <option value="size">雪道規模（長到短）</option>
+              <option value="price_asc">一日券（低到高）</option>
+              <option value="price_desc">一日券（高到低）</option>
               <option value="name">名稱</option>
             </select>
           </label>
@@ -51,6 +55,17 @@
       <footer class="colophon" id="colophon"></footer>
     </section>
     <section class="detail-pane" id="detail" aria-live="polite"></section>
+  </div>
+  <div id="settings" class="settings" hidden>
+    <div class="settings-card" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <h2 id="settings-title">卡片顯示</h2>
+      <p>勾選首頁列表要出現的項目。詳情頁不受影響。</p>
+      <div id="settings-fields"></div>
+      <div class="settings-actions">
+        <button type="button" id="settings-reset">恢復預設</button>
+        <button type="button" id="settings-close">完成</button>
+      </div>
+    </div>
   </div>
   <noscript><p class="noscript">這個頁面需要 JavaScript 才能顯示雪況。</p></noscript>
   <script src="assets/app.js" defer></script>

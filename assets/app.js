@@ -1,4 +1,15 @@
 const FKEY = "jp-snow-favs";
+const FIELD_KEY = "jp-snow-cards";
+const FIELD_DEFS = [
+  ["depth", "積雪"],
+  ["d24", "24 小時新雪"],
+  ["d48", "48 小時新雪"],
+  ["temp", "氣溫"],
+  ["forecast", "未來 3 日預報"],
+  ["size", "雪道規模"],
+  ["price", "一日券價格"],
+];
+const SORTS = new Set(["depth", "d24", "d48", "fc3", "name", "size", "price_asc", "price_desc"]);
 const WEEK = ["日", "一", "二", "三", "四", "五", "六"];
 
 const state = { q: "", region: "all", sort: "depth", id: null };
@@ -8,6 +19,7 @@ let updated = "";
 let obsTime = "";
 let regions = [];
 const favs = loadFavs();
+let fields = loadFields();
 
 const qInput = document.querySelector("#q");
 const sortSel = document.querySelector("#sort");
@@ -38,6 +50,28 @@ function loadFavs() {
 }
 function saveFavs() {
   localStorage.setItem(FKEY, JSON.stringify([...favs]));
+}
+function defaultFields() {
+  return Object.fromEntries(FIELD_DEFS.map(([id]) => [id, true]));
+}
+function loadFields() {
+  const base = defaultFields();
+  try {
+    const raw = JSON.parse(localStorage.getItem(FIELD_KEY) || "null");
+    if (!raw || typeof raw !== "object") return base;
+    for (const [id] of FIELD_DEFS) {
+      if (typeof raw[id] === "boolean") base[id] = raw[id];
+    }
+  } catch {
+    return base;
+  }
+  return base;
+}
+function saveFields() {
+  localStorage.setItem(FIELD_KEY, JSON.stringify(fields));
+}
+function showField(id) {
+  return fields[id] !== false;
 }
 
 function fold(value) {
@@ -125,6 +159,7 @@ function readHash() {
   state.q = params.get("q") || "";
   state.region = params.get("region") || "all";
   state.sort = params.get("sort") || "depth";
+  if (!SORTS.has(state.sort)) state.sort = "depth";
 }
 function writeHash(replace) {
   const params = new URLSearchParams();
@@ -169,9 +204,44 @@ function metric(resort, key) {
   const value = row[key];
   return typeof value === "number" ? value : -1;
 }
+function sizeKm(resort) {
+  const km = resort.size && resort.size.piste_km;
+  return typeof km === "number" ? km : null;
+}
+function priceYen(resort) {
+  const yen = resort.ticket && resort.ticket.jpy;
+  return typeof yen === "number" ? yen : null;
+}
 function bySort(a, b) {
-  if (state.sort === "name") return a.zh.localeCompare(b.zh, "zh-Hant");
-  return metric(b, state.sort) - metric(a, state.sort) || a.zh.localeCompare(b.zh, "zh-Hant");
+  const name = a.zh.localeCompare(b.zh, "zh-Hant");
+  if (state.sort === "name") return name;
+  if (state.sort === "size" || state.sort === "price_asc" || state.sort === "price_desc") {
+    const av = state.sort === "size" ? sizeKm(a) : priceYen(a);
+    const bv = state.sort === "size" ? sizeKm(b) : priceYen(b);
+    if (av == null && bv == null) return name;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    const sign = state.sort === "price_asc" ? 1 : -1;
+    return (av - bv) * sign || name;
+  }
+  return metric(b, state.sort) - metric(a, state.sort) || name;
+}
+function yenText(value) {
+  return "¥" + Number(value).toLocaleString("zh-Hant");
+}
+function sizeLine(resort) {
+  const size = resort.size;
+  if (!size || size.piste_km == null) return "未知";
+  const km = Number.isInteger(size.piste_km) ? String(size.piste_km) : String(size.piste_km);
+  const bits = [`${km} km`];
+  if (size.courses) bits.push(`${size.courses} 條`);
+  if (size.lifts) bits.push(`纜車 ${size.lifts}`);
+  return bits.join(" · ");
+}
+function priceLine(resort) {
+  const ticket = resort.ticket;
+  if (!ticket || ticket.jpy == null) return "未知";
+  return `${yenText(ticket.jpy)}（${ticket.season}）`;
 }
 
 function card(resort) {
@@ -199,19 +269,34 @@ function card(resort) {
   const sub = document.createElement("p");
   sub.className = "sub";
   sub.textContent = [resort.pref, resort.ja].filter(Boolean).join(" · ");
+  link.append(title, sub);
   const stats = document.createElement("div");
   stats.className = "stats";
-  stats.append(
-    stat(cm(row.depth), "cm", `積雪 · ${kindText(row.depth_kind || "est")}`, row.depth),
-    stat(cm(row.d24), "cm", row.d24_kind === "obs" ? "24 小時 · 實測" : "24 小時", row.d24, true),
-    stat(tempText(row.temp), "", row.temp_kind === "obs" ? "氣溫 · 實測" : "氣溫", row.temp)
-  );
-  const extra = document.createElement("p");
-  extra.className = "extra";
-  extra.textContent = `48 小時 ${cm(row.d48)} cm · 未來 3 日 ${cm(row.fc3)} cm`;
-  link.append(title, sub, stats, extra);
+  if (showField("depth")) stats.append(stat(cm(row.depth), "cm", `積雪 · ${kindText(row.depth_kind || "est")}`, row.depth));
+  if (showField("d24")) stats.append(stat(cm(row.d24), "cm", row.d24_kind === "obs" ? "24 小時 · 實測" : "24 小時", row.d24, true));
+  if (showField("temp")) stats.append(stat(tempText(row.temp), "", row.temp_kind === "obs" ? "氣溫 · 實測" : "氣溫", row.temp));
+  if (stats.childElementCount) link.append(stats);
+  const extraBits = [];
+  if (showField("d48")) extraBits.push(`48 小時 ${cm(row.d48)} cm`);
+  if (showField("forecast")) extraBits.push(`未來 3 日 ${cm(row.fc3)} cm`);
+  if (extraBits.length) {
+    const extra = document.createElement("p");
+    extra.className = "extra";
+    extra.textContent = extraBits.join(" · ");
+    link.append(extra);
+  }
+  if (showField("size")) link.append(metaLine("雪道", sizeLine(resort)));
+  if (showField("price")) link.append(metaLine("一日券", priceLine(resort)));
   article.append(link, fav);
   return article;
+}
+function metaLine(label, value) {
+  const p = document.createElement("p");
+  p.className = "meta";
+  const strong = document.createElement("b");
+  strong.textContent = label + " ";
+  p.append(strong, document.createTextNode(value));
+  return p;
 }
 function stat(value, unit, label, raw, hotSnow) {
   const node = document.createElement("div");
@@ -340,7 +425,7 @@ function renderDetail() {
     cell(wxText(row.wx) || "—", "現在天氣")
   );
 
-  wrap.append(back, h1, names, hero, grid);
+  wrap.append(back, h1, names, hero, grid, factsBox(resort));
   if (resort.note) {
     const note = document.createElement("p");
     note.className = "note";
@@ -366,6 +451,9 @@ function renderDetail() {
   share.textContent = "分享";
   share.addEventListener("click", () => shareResort(resort));
   actions.append(fav, share);
+  const links = resort.links || {};
+  if (links.status) actions.append(extLink(links.status, "纜車即時運行狀態"));
+  if (links.ticket) actions.append(extLink(links.ticket, "纜車票價"));
   if (resort.web) {
     const site = document.createElement("a");
     site.href = resort.web;
@@ -391,6 +479,42 @@ function renderDetail() {
   document.title = `${resort.zh}｜日本雪場`;
 }
 
+function factsBox(resort) {
+  const box = document.createElement("div");
+  box.className = "obs-box";
+  const h2 = document.createElement("h2");
+  h2.textContent = "雪道與一日券";
+  const size = document.createElement("p");
+  size.textContent = `雪道規模：${sizeLine(resort)}`;
+  const sizeNote = document.createElement("p");
+  sizeNote.className = "extra";
+  sizeNote.textContent = resort.size
+    ? `${resort.size.note} 統計日 ${resort.size.as_of}。`
+    : "OpenStreetMap 還沒畫到足夠的雪道，所以是未知。";
+  const price = document.createElement("p");
+  price.textContent = resort.ticket
+    ? `一日券：${yenText(resort.ticket.jpy)}，${resort.ticket.season}。`
+    : "一日券：未知。";
+  box.append(h2, size, sizeNote, price);
+  if (resort.ticket) {
+    const note = document.createElement("p");
+    note.className = "extra";
+    const bits = [`查閱日 ${resort.ticket.as_of}`];
+    if (resort.ticket.note) bits.push(resort.ticket.note);
+    note.append(document.createTextNode(bits.join("。") + "。來源："));
+    note.append(extLink(resort.ticket.source, "官網頁面"));
+    box.append(note);
+  }
+  return box;
+}
+function extLink(href, text) {
+  const a = document.createElement("a");
+  a.href = href;
+  a.target = "_blank";
+  a.rel = "noopener";
+  a.textContent = text;
+  return a;
+}
 function cell(value, label) {
   const node = document.createElement("div");
   node.className = "cell";
@@ -553,7 +677,7 @@ function renderChrome() {
     link("https://open-meteo.com/", "Open-Meteo"),
     document.createTextNode(" 天氣模式的估計（CC BY 4.0）。雪場位置 © "),
     link("https://www.openstreetmap.org/copyright", "OpenStreetMap"),
-    document.createTextNode(" 貢獻者。測站資料來源："),
+    document.createTextNode(" 貢獻者。雪道長度是同一份地圖裡 downhill 雪道的加總。一日券只收錄從雪場官網讀到的成人價，並寫上適用期間。測站資料來源："),
     link("https://www.jma.go.jp/bosai/amedas/", "氣象廳"),
     document.createTextNode("，內容有整理，不是原始畫面。這不是正式預報，出發前請再跟雪場確認。")
   );
@@ -593,8 +717,47 @@ async function main() {
     return;
   }
   renderChrome();
+  bindSettings();
   syncControls();
   render();
+}
+
+function bindSettings() {
+  const panel = document.querySelector("#settings");
+  const fieldsBox = document.querySelector("#settings-fields");
+  const paint = () => {
+    fieldsBox.replaceChildren();
+    for (const [id, label] of FIELD_DEFS) {
+      const row = document.createElement("label");
+      row.className = "field";
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.checked = showField(id);
+      input.addEventListener("change", () => {
+        fields[id] = input.checked;
+        saveFields();
+        render();
+      });
+      row.append(input, document.createTextNode(label));
+      fieldsBox.append(row);
+    }
+  };
+  paint();
+  document.querySelector("#settings-open").addEventListener("click", () => {
+    panel.hidden = false;
+  });
+  document.querySelector("#settings-close").addEventListener("click", () => {
+    panel.hidden = true;
+  });
+  document.querySelector("#settings-reset").addEventListener("click", () => {
+    fields = defaultFields();
+    saveFields();
+    paint();
+    render();
+  });
+  panel.addEventListener("click", (event) => {
+    if (event.target === panel) panel.hidden = true;
+  });
 }
 
 main();

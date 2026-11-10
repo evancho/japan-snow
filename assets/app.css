@@ -50,9 +50,21 @@ a { color: var(--teal); }
   position: sticky;
   top: 0;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   background: rgba(231, 238, 242, 0.92);
   backdrop-filter: blur(8px);
   padding: 14px 16px 0;
+}
+.settings-open {
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
 }
 .brand {
   display: flex;
@@ -177,9 +189,16 @@ a { color: var(--teal); }
 }
 .stats {
   display: grid;
-  grid-template-columns: 1.15fr 1fr 0.8fr;
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
   gap: 6px;
 }
+.meta {
+  margin: 6px 0 0;
+  color: var(--ink);
+  font-size: 13px;
+}
+.meta b { font-weight: 650; }
+.meta .muted { color: var(--muted); }
 .stat b {
   display: block;
   font-size: 18px;
@@ -351,8 +370,45 @@ a { color: var(--teal); }
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 14px;
-  z-index: 30;
+  z-index: 40;
 }
+.settings {
+  position: fixed;
+  inset: 0;
+  z-index: 35;
+  background: rgba(16, 36, 44, 0.35);
+  display: grid;
+  place-items: end center;
+  padding: 16px;
+}
+.settings[hidden] { display: none; }
+.settings-card {
+  width: min(440px, 100%);
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px 16px 16px;
+  box-shadow: 0 12px 40px rgba(16, 36, 44, 0.18);
+}
+.settings-card h2 { margin: 0 0 6px; font-size: 18px; }
+.settings-card p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+.field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+  font-size: 16px;
+}
+.field input { width: 18px; height: 18px; }
+.settings-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+.settings-actions button {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+#settings-close { background: var(--teal-deep); color: #fff; border-color: var(--teal-deep); }
 
 @media (min-width: 960px) {
   .app {
