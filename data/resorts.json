@@ -845,7 +845,8 @@
     "note": "旭岳雪道自由滑、只收大雪山纜車費用；トップシーズン（6/1–10/31）3,500、片道 1,700。"
    },
    "links": {
-    "ticket": "https://asahidake.hokkaido.jp/ja/#SCHEDULE"
+    "ticket": "https://asahidake.hokkaido.jp/ja/#SCHEDULE",
+    "status": "https://asahidake.hokkaido.jp/ja/"
    }
   },
   {
@@ -2296,7 +2297,7 @@
    },
    "links": {
     "ticket": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
-    "status": "https://www.princehotels.co.jp/ski/furano/winter/coursemap/"
+    "status": "https://www.princehotels.co.jp/ski/furano/informations/?tab=operation"
    }
   },
   {
@@ -4612,7 +4613,7 @@
    },
    "links": {
     "ticket": "https://ishiuchi.or.jp/winter/price/",
-    "status": "https://ishiuchi.or.jp/winter/news/"
+    "status": "https://www.ishiuchi.or.jp/winter/ski/lift-course/"
    }
   },
   {
@@ -7774,7 +7775,7 @@
    },
    "links": {
     "ticket": "https://www.princehotels.co.jp/ski/myoko/winter/lift/",
-    "status": "https://www.princehotels.co.jp/ski/myoko/winter/coursemap/"
+    "status": "https://www.princehotels.co.jp/ski/myoko/informations/?tab=operation"
    }
   },
   {
@@ -7817,7 +7818,7 @@
    },
    "links": {
     "ticket": "https://www.princehotels.co.jp/ski/naeba/winter/lift/",
-    "status": "https://www.princehotels.co.jp/ski/naeba/winter/coursemap/"
+    "status": "https://www.princehotels.co.jp/ski/naeba/informations/?tab=operation"
    }
   },
   {
@@ -9718,7 +9719,8 @@
     "note": "こども 7,400、シニア 7,400；4小時券 7,400；25小時券 33,000。"
    },
    "links": {
-    "ticket": "https://sahoro-resort.com/winter/ski/price"
+    "ticket": "https://sahoro-resort.com/winter/ski/price",
+    "status": "https://sahoro-resort.com/winter/ski/course-info"
    }
   },
   {
@@ -10271,6 +10273,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 2,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10299,6 +10313,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 3,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10327,6 +10353,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 2,
     "lifts": 1
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10355,6 +10393,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 1,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10383,6 +10433,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 2,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10411,6 +10473,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 5,
     "lifts": 4
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10439,6 +10513,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 5,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10468,6 +10554,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 13,
     "lifts": 7
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10496,6 +10594,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 4,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10524,6 +10634,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 4,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10553,6 +10675,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 13,
     "lifts": 6
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10581,6 +10715,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 4,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10609,6 +10755,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 3,
     "lifts": 1
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10637,6 +10795,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 3,
     "lifts": 3
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10667,6 +10837,18 @@
     "as_of": "2026-11-10",
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "lifts": 1
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10695,6 +10877,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 4,
     "lifts": 2
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -10727,7 +10921,7 @@
    },
    "links": {
     "ticket": "https://www.princehotels.co.jp/ski/shiga/winter/lift/",
-    "status": "https://www.princehotels.co.jp/ski/shiga/winter/coursemap/"
+    "status": "https://www.princehotels.co.jp/ski/shiga/informations/?tab=operation"
    },
    "ticket": {
     "jpy": 8500,
@@ -10764,6 +10958,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 9,
     "lifts": 4
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026-27 共通券営業期間（2026-12-05～2027-05-05）窓口價",
+    "label": "成人一日券",
+    "source": "https://www.shigakogen-ski.or.jp/ticket/",
+    "as_of": "2026-11-10",
+    "note": "志賀高原全山共通券（全18場共通）；一日券僅各場窓口販售"
+   },
+   "links": {
+    "ticket": "https://www.shigakogen-ski.or.jp/ticket/",
+    "status": "https://www.shigakogen-ski.or.jp/lift/index.php"
    }
   },
   {
@@ -12706,7 +12912,8 @@
     "note": "WEB 票 9,200、住宿客優待 9,000；アーリー／スプリング一日券 5,000。官網未列 26-27 主季日期。"
    },
    "links": {
-    "ticket": "https://www.snowtomamu.jp/winter/ski/ticket/"
+    "ticket": "https://www.snowtomamu.jp/winter/ski/ticket/",
+    "status": "https://www.snowtomamu.jp/winter/ski/ski-slope/condition/"
    }
   },
   {
@@ -12815,7 +13022,7 @@
    },
    "links": {
     "ticket": "https://www.tsugaike.gr.jp/snow/price",
-    "status": "https://www.tsugaike.gr.jp/"
+    "status": "https://www.tsugaike.gr.jp/snow/gelande"
    }
   },
   {
