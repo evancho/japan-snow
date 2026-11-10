@@ -117,7 +117,7 @@ a { color: var(--teal); }
   color: var(--ink);
   cursor: pointer;
 }
-.regions button[aria-selected="true"] {
+.regions button[aria-pressed="true"] {
   background: var(--teal-deep);
   border-color: var(--teal-deep);
   color: #fff;
@@ -258,8 +258,20 @@ a { color: var(--teal); }
   color: var(--muted);
   font-size: 12px;
 }
-.colophon a { color: var(--teal); }
+.colophon a, .linkish { color: var(--teal); }
 .colophon p { margin: 0 0 8px; }
+.linkish {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.version-line { margin-top: 4px; }
+.releases { display: flex; flex-direction: column; gap: 14px; max-height: 60vh; overflow: auto; }
+.release h3 { margin: 0; font-size: 15px; }
+.release ul { margin: 6px 0 0; padding-left: 1.2em; }
+.release li { margin: 3px 0; }
 
 .detail-pane { display: none; }
 .detail-pane.open {
@@ -408,7 +420,30 @@ a { color: var(--teal); }
   padding: 8px 14px;
   cursor: pointer;
 }
-#settings-close { background: var(--teal-deep); color: #fff; border-color: var(--teal-deep); }
+#settings-close, #changelog-close, #update-now { background: var(--teal-deep); color: #fff; border-color: var(--teal-deep); }
+.update {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 45;
+  display: grid;
+  justify-items: center;
+  padding: 12px;
+  pointer-events: none;
+}
+.update[hidden] { display: none; }
+.update-card {
+  pointer-events: auto;
+  width: min(440px, 100%);
+  background: #fff;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 12px 40px rgba(16, 36, 44, 0.2);
+}
+.update-card h2 { margin: 0 0 8px; font-size: 18px; }
+.update-card ul { margin: 0 0 12px; padding-left: 1.2em; }
+.update-card li { margin: 4px 0; }
 
 @media (min-width: 960px) {
   .app {

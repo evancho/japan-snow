@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://evancho.github.io/japan-snow/">
   <title>日本雪場｜積雪與降雪預報</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/app.css">
+  <link rel="stylesheet" href="assets/app.css?v=1.1.0">
 </head>
 <body>
   <div class="app">
@@ -31,16 +31,16 @@
           <span class="sr">搜尋雪場</span>
           <input id="q" type="search" enterkeyhint="search" autocomplete="off" placeholder="搜尋雪場，中文、日文、英文都可以" autocapitalize="off">
         </label>
-        <div class="regions" id="regions" role="tablist" aria-label="地區"></div>
+        <div class="regions" id="regions" role="group" aria-label="都道府縣"></div>
         <div class="sort-row">
           <label class="sort">
             <span>排序</span>
             <select id="sort">
+              <option value="size" selected>雪道規模（長到短）</option>
               <option value="depth">積雪深度</option>
               <option value="d24">24 小時新雪</option>
               <option value="d48">48 小時新雪</option>
               <option value="fc3">未來 3 日預報</option>
-              <option value="size">雪道規模（長到短）</option>
               <option value="price_asc">一日券（低到高）</option>
               <option value="price_desc">一日券（高到低）</option>
               <option value="name">名稱</option>
@@ -61,13 +61,33 @@
       <h2 id="settings-title">卡片顯示</h2>
       <p>勾選首頁列表要出現的項目。詳情頁不受影響。</p>
       <div id="settings-fields"></div>
+      <p class="version-line">版本 <span id="settings-version">v1.1.0</span> · <button type="button" class="linkish" data-open-changelog>更新紀錄</button></p>
       <div class="settings-actions">
         <button type="button" id="settings-reset">恢復預設</button>
         <button type="button" id="settings-close">完成</button>
       </div>
     </div>
   </div>
+  <div id="changelog" class="settings" hidden>
+    <div class="settings-card" role="dialog" aria-modal="true" aria-labelledby="changelog-title">
+      <h2 id="changelog-title">更新紀錄</h2>
+      <div id="changelog-body"></div>
+      <div class="settings-actions">
+        <button type="button" id="changelog-close">關閉</button>
+      </div>
+    </div>
+  </div>
+  <div id="update" class="update" hidden>
+    <div class="update-card" role="dialog" aria-labelledby="update-title">
+      <h2 id="update-title">有新版本</h2>
+      <ul id="update-notes"></ul>
+      <div class="settings-actions">
+        <button type="button" id="update-later">稍後</button>
+        <button type="button" id="update-now">立即更新</button>
+      </div>
+    </div>
+  </div>
   <noscript><p class="noscript">這個頁面需要 JavaScript 才能顯示雪況。</p></noscript>
-  <script src="assets/app.js" defer></script>
+  <script src="assets/app.js?v=1.1.0" defer></script>
 </body>
 </html>

@@ -1,4 +1,7 @@
+const APP_VERSION = "1.1.0";
 const FKEY = "jp-snow-favs";
+const SKIP_KEY = "jp-snow-skip-version";
+const CHECK_MS = 15 * 60 * 1000;
 const FIELD_KEY = "jp-snow-cards";
 const FIELD_DEFS = [
   ["depth", "積雪"],
@@ -12,12 +15,23 @@ const FIELD_DEFS = [
 const SORTS = new Set(["depth", "d24", "d48", "fc3", "name", "size", "price_asc", "price_desc"]);
 const WEEK = ["日", "一", "二", "三", "四", "五", "六"];
 
-const state = { q: "", region: "all", sort: "depth", id: null };
+const state = { q: "", region: "all", prefs: [], sort: "size", id: null };
+const PREF_ORDER = [
+  "北海道", "青森", "岩手", "秋田", "山形", "宮城", "福島",
+  "新潟", "群馬", "栃木", "茨城", "埼玉", "千葉", "東京", "神奈川",
+  "長野", "富山", "石川", "福井", "山梨", "岐阜", "靜岡", "愛知", "三重",
+  "滋賀", "京都", "大阪", "兵庫", "奈良", "和歌山",
+  "鳥取", "島根", "岡山", "廣島", "山口",
+  "德島", "香川", "愛媛", "高知",
+  "福岡", "佐賀", "長崎", "熊本", "大分", "宮崎", "鹿兒島", "沖繩",
+];
 let resorts = [];
 let cond = {};
 let updated = "";
 let obsTime = "";
 let regions = [];
+let manifest = null;
+let checkTimer = 0;
 const favs = loadFavs();
 let fields = loadFields();
 
@@ -158,14 +172,16 @@ function readHash() {
   state.id = match ? decodeURIComponent(match[1]) : null;
   state.q = params.get("q") || "";
   state.region = params.get("region") || "all";
-  state.sort = params.get("sort") || "depth";
-  if (!SORTS.has(state.sort)) state.sort = "depth";
+  state.prefs = (params.get("pref") || "").split(",").map((item) => item.trim()).filter(Boolean);
+  state.sort = params.get("sort") || "size";
+  if (!SORTS.has(state.sort)) state.sort = "size";
 }
 function writeHash(replace) {
   const params = new URLSearchParams();
   if (state.q) params.set("q", state.q);
-  if (state.region && state.region !== "all") params.set("region", state.region);
-  if (state.sort && state.sort !== "depth") params.set("sort", state.sort);
+  if (state.prefs.length) params.set("pref", state.prefs.join(","));
+  else if (state.region && state.region !== "all") params.set("region", state.region);
+  if (state.sort && state.sort !== "size") params.set("sort", state.sort);
   const qs = params.toString();
   const path = state.id ? `/r/${encodeURIComponent(state.id)}` : "/";
   const next = "#" + path + (qs ? `?${qs}` : "");
@@ -185,7 +201,9 @@ function syncControls() {
   if (document.activeElement !== qInput && qInput.value !== state.q) qInput.value = state.q;
   if (sortSel.value !== state.sort) sortSel.value = state.sort;
   for (const button of regionBox.querySelectorAll("button")) {
-    button.setAttribute("aria-selected", button.dataset.region === state.region ? "true" : "false");
+    const pref = button.dataset.pref || "";
+    const on = pref ? state.prefs.includes(pref) : state.prefs.length === 0 && state.region === "all";
+    button.setAttribute("aria-pressed", on ? "true" : "false");
   }
 }
 
@@ -193,7 +211,9 @@ function regionName(id) {
   return regions.find((item) => item.id === id)?.zh || "";
 }
 function matches(resort) {
-  if (state.region !== "all" && resort.region !== state.region) return false;
+  if (state.prefs.length) {
+    if (!state.prefs.includes(resort.pref)) return false;
+  } else if (state.region !== "all" && resort.region !== state.region) return false;
   const q = fold(state.q);
   if (!q) return true;
   return resort._q.includes(q);
@@ -268,7 +288,9 @@ function card(resort) {
   title.textContent = resort.zh;
   const sub = document.createElement("p");
   sub.className = "sub";
-  sub.textContent = [resort.pref, resort.ja].filter(Boolean).join(" · ");
+  const regionLabel = regionName(resort.region);
+  const place = regionLabel && regionLabel !== resort.pref ? `${resort.pref}（${regionLabel}）` : resort.pref;
+  sub.textContent = [place, resort.ja].filter(Boolean).join(" · ");
   link.append(title, sub);
   const stats = document.createElement("div");
   stats.className = "stats";
@@ -314,8 +336,9 @@ function stat(value, unit, label, raw, hotSnow) {
 function hrefFor(next) {
   const params = new URLSearchParams();
   if (next.q) params.set("q", next.q);
-  if (next.region && next.region !== "all") params.set("region", next.region);
-  if (next.sort && next.sort !== "depth") params.set("sort", next.sort);
+  if (next.prefs && next.prefs.length) params.set("pref", next.prefs.join(","));
+  else if (next.region && next.region !== "all") params.set("region", next.region);
+  if (next.sort && next.sort !== "size") params.set("sort", next.sort);
   const qs = params.toString();
   const path = next.id ? `/r/${encodeURIComponent(next.id)}` : "/";
   return "#" + path + (qs ? `?${qs}` : "");
@@ -637,25 +660,37 @@ function render() {
 }
 
 function renderChrome() {
+  const counts = new Map();
+  for (const resort of resorts) counts.set(resort.pref, (counts.get(resort.pref) || 0) + 1);
+  const prefs = [...counts.keys()].sort((a, b) => {
+    const ia = PREF_ORDER.indexOf(a);
+    const ib = PREF_ORDER.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || a.localeCompare(b, "zh-Hant");
+  });
   regionBox.replaceChildren();
   const all = document.createElement("button");
   all.type = "button";
-  all.dataset.region = "all";
-  all.textContent = "全部";
-  all.setAttribute("role", "tab");
+  all.textContent = `全部 ${resorts.length}`;
   regionBox.append(all);
-  for (const region of regions) {
+  for (const pref of prefs) {
     const button = document.createElement("button");
     button.type = "button";
-    button.dataset.region = region.id;
-    button.textContent = region.zh;
-    button.setAttribute("role", "tab");
+    button.dataset.pref = pref;
+    button.textContent = `${pref} ${counts.get(pref)}`;
     regionBox.append(button);
   }
   regionBox.addEventListener("click", (event) => {
     const button = event.target.closest("button");
     if (!button) return;
-    state.region = button.dataset.region;
+    state.region = "all";
+    if (!button.dataset.pref) {
+      state.prefs = [];
+    } else {
+      const pref = button.dataset.pref;
+      state.prefs = state.prefs.includes(pref)
+        ? state.prefs.filter((item) => item !== pref)
+        : [...state.prefs, pref];
+    }
     writeHash(false);
   });
   const season = seasonCopy();
@@ -681,7 +716,16 @@ function renderChrome() {
     link("https://www.jma.go.jp/bosai/amedas/", "氣象廳"),
     document.createTextNode("，內容有整理，不是原始畫面。這不是正式預報，出發前請再跟雪場確認。")
   );
-  colophon.append(p1, p2);
+  const versionLine = document.createElement("p");
+  versionLine.className = "version-line";
+  versionLine.append(document.createTextNode(`版本 ${versionLabel(APP_VERSION)} · `));
+  const logButton = document.createElement("button");
+  logButton.type = "button";
+  logButton.className = "linkish";
+  logButton.dataset.openChangelog = "1";
+  logButton.textContent = "更新紀錄";
+  versionLine.append(logButton);
+  colophon.append(p1, p2, versionLine);
 }
 function link(href, text) {
   const a = document.createElement("a");
@@ -692,8 +736,140 @@ function link(href, text) {
   return a;
 }
 
+function semverParts(value) {
+  const match = String(value || "").trim().replace(/^v/i, "").match(/^(\d+)\.(\d+)\.(\d+)$/);
+  return match ? [Number(match[1]), Number(match[2]), Number(match[3])] : null;
+}
+function semverCmp(left, right) {
+  const a = semverParts(left);
+  const b = semverParts(right);
+  if (!a || !b) return null;
+  for (let i = 0; i < 3; i += 1) {
+    if (a[i] !== b[i]) return a[i] - b[i];
+  }
+  return 0;
+}
+function versionLabel(value) {
+  return "v" + String(value || "").replace(/^v/i, "");
+}
+async function fetchManifest() {
+  const response = await fetch(`version.json?t=${Date.now()}`, { cache: "no-cache" });
+  if (!response.ok) throw new Error("version");
+  return response.json();
+}
+function showUpdate(remote) {
+  const banner = document.querySelector("#update");
+  document.querySelector("#update-title").textContent = `有新版本 ${versionLabel(remote.version)}`;
+  const list = document.querySelector("#update-notes");
+  list.replaceChildren();
+  const entry = (remote.history || []).find((item) => item.version === remote.version);
+  const notes = entry && Array.isArray(entry.notes) && entry.notes.length ? entry.notes : ["這個版本有新的頁面。"];
+  for (const note of notes) {
+    const item = document.createElement("li");
+    item.textContent = note;
+    list.append(item);
+  }
+  banner.dataset.version = remote.version;
+  banner.hidden = false;
+}
+async function checkForUpdate() {
+  try {
+    const fresh = await fetchManifest();
+    manifest = fresh;
+    const cmp = semverCmp(fresh.version, APP_VERSION);
+    if (cmp == null || cmp <= 0) return;
+    if (sessionStorage.getItem(SKIP_KEY) === fresh.version) return;
+    showUpdate(fresh);
+  } catch {
+    /* 版本檔讀不到就維持現在這版，不要擋雪況。 */
+  }
+}
+function scheduleCheck() {
+  clearTimeout(checkTimer);
+  checkTimer = setTimeout(checkForUpdate, 400);
+}
+async function updateNow() {
+  const urls = new Set(["index.html", "version.json", "favicon.svg"]);
+  for (const node of document.querySelectorAll("script[src], link[rel='stylesheet']")) {
+    const src = node.getAttribute("src") || node.getAttribute("href");
+    if (src) urls.add(new URL(src, location.href).href);
+  }
+  await Promise.all([...urls].map((url) => fetch(url, { cache: "reload" }).catch(() => {})));
+  const next = new URL(location.href);
+  const version = document.querySelector("#update").dataset.version || "";
+  if (version) next.searchParams.set("v", version);
+  location.replace(next.href);
+}
+async function openChangelog() {
+  const panel = document.querySelector("#changelog");
+  const body = document.querySelector("#changelog-body");
+  if (!manifest) {
+    try {
+      manifest = await fetchManifest();
+    } catch {
+      manifest = null;
+    }
+  }
+  body.replaceChildren();
+  const history = (manifest && manifest.history) || [];
+  if (!history.length) {
+    const empty = document.createElement("p");
+    empty.textContent = `更新紀錄暫時讀不到。目前這個頁面是 ${versionLabel(APP_VERSION)}。`;
+    body.append(empty);
+  } else {
+    const wrap = document.createElement("div");
+    wrap.className = "releases";
+    for (const entry of history) {
+      const block = document.createElement("section");
+      block.className = "release";
+      const heading = document.createElement("h3");
+      const date = String(entry.date || "").replace(/-/g, "/");
+      heading.textContent = versionLabel(entry.version) + (date ? `　${date}` : "");
+      const list = document.createElement("ul");
+      for (const note of entry.notes || []) {
+        const item = document.createElement("li");
+        item.textContent = note;
+        list.append(item);
+      }
+      block.append(heading, list);
+      wrap.append(block);
+    }
+    body.append(wrap);
+  }
+  document.querySelector("#settings").hidden = true;
+  panel.hidden = false;
+}
+function bindVersion() {
+  const settingsVersion = document.querySelector("#settings-version");
+  if (settingsVersion) settingsVersion.textContent = versionLabel(APP_VERSION);
+  document.addEventListener("click", (event) => {
+    if (event.target.closest("[data-open-changelog]")) openChangelog();
+  });
+  document.querySelector("#changelog-close").addEventListener("click", () => {
+    document.querySelector("#changelog").hidden = true;
+  });
+  document.querySelector("#changelog").addEventListener("click", (event) => {
+    if (event.target.id === "changelog") document.querySelector("#changelog").hidden = true;
+  });
+  document.querySelector("#update-later").addEventListener("click", () => {
+    const version = document.querySelector("#update").dataset.version || "";
+    if (version) sessionStorage.setItem(SKIP_KEY, version);
+    document.querySelector("#update").hidden = true;
+  });
+  document.querySelector("#update-now").addEventListener("click", () => {
+    updateNow();
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") scheduleCheck();
+  });
+  window.addEventListener("focus", scheduleCheck);
+  setInterval(scheduleCheck, CHECK_MS);
+  checkForUpdate();
+}
+
 async function main() {
   readHash();
+  bindVersion();
   try {
     const [resortRes, condRes] = await Promise.all([
       fetch("data/resorts.json", { cache: "no-cache" }),

@@ -648,6 +648,7 @@
     "dist": 9.2,
     "ele": 275
    },
+   "web": "https://www.appi.co.jp/",
    "size": {
     "piste_km": 43.2,
     "source": "OpenStreetMap",
@@ -655,6 +656,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 27,
     "lifts": 8
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "2026/12/19–2027/3/28 通常",
+    "label": "成人一日券",
+    "source": "https://www.appi.co.jp/snow-mountain-resort/ticket/",
+    "as_of": "2026-11-10",
+    "note": "BLUE PASS 窗口與線上同價。12/5–12/18 的早季窗口是 4,500 円。"
+   },
+   "links": {
+    "ticket": "https://www.appi.co.jp/snow-mountain-resort/ticket/",
+    "status": "https://www.appi.co.jp/snow-mountain-resort/info/"
    }
   },
   {
@@ -831,14 +844,6 @@
     "zh": "俱知安",
     "dist": 1.9,
     "ele": 176
-   },
-   "size": {
-    "piste_km": 2.4,
-    "source": "OpenStreetMap",
-    "as_of": "2026-11-10",
-    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
-    "courses": 1,
-    "lifts": 1
    }
   },
   {
@@ -1110,6 +1115,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 9,
     "lifts": 8
+   },
+   "ticket": {
+    "jpy": 6800,
+    "season": "官網通常價格（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.biwako-valley.com/w_season/hours_fare_winter/",
+    "as_of": "2026-11-10",
+    "note": "含纜車往返與雪道。預售有較低的區間價。"
+   },
+   "links": {
+    "ticket": "https://www.biwako-valley.com/w_season/hours_fare_winter/"
    }
   },
   {
@@ -1726,6 +1742,7 @@
     "dist": 8.0,
     "ele": 430
    },
+   "web": "https://www.dynaland.co.jp/",
    "size": {
     "piste_km": 12.1,
     "source": "OpenStreetMap",
@@ -1733,6 +1750,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 17,
     "lifts": 5
+   },
+   "ticket": {
+    "jpy": 6400,
+    "season": "全日（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.dynaland.co.jp/charge/",
+    "as_of": "2026-11-10"
+   },
+   "links": {
+    "ticket": "https://www.dynaland.co.jp/charge/",
+    "status": "https://www.dynaland.co.jp/condition/"
    }
   },
   {
@@ -2225,13 +2253,25 @@
     "dist": 4.9,
     "ele": 174
    },
+   "web": "https://www.princehotels.co.jp/ski/furano/winter/",
    "size": {
     "piste_km": 31.4,
     "source": "OpenStreetMap",
     "as_of": "2026-11-10",
-    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。官網介紹寫約 28 條雪道。這裡的條數是地圖上有名稱的段，可能對不上。",
     "courses": 25,
     "lifts": 10
+   },
+   "ticket": {
+    "jpy": 9000,
+    "season": "2026-27 通常（12/5–3/22）",
+    "label": "成人一日券",
+    "source": "https://www.princehotels.co.jp/ski/furano/winter/lift/",
+    "as_of": "2026-11-10",
+    "note": "一般窗口。初滑與春雪是 7,500 円。"
+   },
+   "links": {
+    "ticket": "https://www.princehotels.co.jp/ski/furano/winter/lift/"
    }
   },
   {
@@ -2323,9 +2363,20 @@
     "piste_km": 20.6,
     "source": "OpenStreetMap",
     "as_of": "2026-11-10",
-    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。官網介紹寫 16 條雪道。地圖上的有名段數可能更多，因為一段雪道被拆開畫。",
     "courses": 19,
     "lifts": 10
+   },
+   "ticket": {
+    "jpy": 8000,
+    "season": "官網纜車加吊椅券（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://gala.co.jp/winter/hours-pricing/",
+    "as_of": "2026-11-10",
+    "note": "網頁價是 7,500 円。"
+   },
+   "links": {
+    "ticket": "https://gala.co.jp/winter/hours-pricing/"
    }
   },
   {
@@ -2575,7 +2626,7 @@
    ],
    "roma": "gurandekograndeco gurandekosunorizoto",
    "osm": "way/320005478",
-   "web": "http://www.grandeco.com/hotel_resort/",
+   "web": "https://grandecoresort.co.jp/",
    "amedas": {
     "id": "36276",
     "ja": "猪苗代",
@@ -3200,12 +3251,25 @@
     "dist": 5.0,
     "ele": 703
    },
+   "web": "https://www.hakubagoryu.jp/?season=winter",
    "size": {
     "piste_km": 12.0,
     "source": "OpenStreetMap",
     "as_of": "2026-11-10",
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "lifts": 13
+   },
+   "ticket": {
+    "jpy": 9500,
+    "season": "官網線上新購一日券（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.hakubagoryu.jp/ski/pricing/lift-tickets/",
+    "as_of": "2026-11-10",
+    "note": "23–64 歲。春雪一日券是 8,500 円。"
+   },
+   "links": {
+    "ticket": "https://www.hakubagoryu.jp/ski/pricing/lift-tickets/",
+    "status": "https://www.hakubagoryu.jp/ski/gelande/lift-and-gondola-status/"
    }
   },
   {
@@ -3900,6 +3964,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 15,
     "lifts": 6
+   },
+   "ticket": {
+    "jpy": 7400,
+    "season": "土日祝・年末年始",
+    "label": "成人一日券",
+    "source": "https://hodaigi.jp/lift-price/",
+    "as_of": "2026-11-10",
+    "note": "平日一日券是 7,100 円。"
+   },
+   "links": {
+    "ticket": "https://hodaigi.jp/lift-price/"
    }
   },
   {
@@ -3991,9 +4066,12 @@
    "lat": 37.60511,
    "lon": 140.03709,
    "aliases": [
+    "Alts Bandai",
+    "Nekoma",
+    "アルツ磐梯",
     "猫魔",
     "貓魔",
-    "Nekoma"
+    "阿爾茨磐梯"
    ],
    "roma": "rizotosuki nekoma",
    "osm": "way/322310180",
@@ -4009,7 +4087,7 @@
     "piste_km": 23.4,
     "source": "OpenStreetMap",
     "as_of": "2026-11-10",
-    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。官網寫全山 33 條雪道，含舊阿爾茨磐梯與貓魔。",
     "courses": 34,
     "lifts": 18
    },
@@ -4294,6 +4372,14 @@
     "courses": 22,
     "lifts": 11
    },
+   "ticket": {
+    "jpy": 6600,
+    "season": "2026-27 訪客一日券",
+    "label": "成人一日券",
+    "source": "https://www.inawashiro-ski.com/lift/",
+    "as_of": "2026-11-10",
+    "note": "一般訪客。粉絲俱樂部平日另有優惠。"
+   },
    "links": {
     "ticket": "https://www.inawashiro-ski.com/lift/"
    }
@@ -4448,8 +4534,16 @@
     "courses": 21,
     "lifts": 14
    },
+   "ticket": {
+    "jpy": 9400,
+    "season": "官網整日窗口（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://ishiuchi.or.jp/winter/price/",
+    "as_of": "2026-11-10",
+    "note": "整日窗口。彈性時間一日券窗口是 8,500 円。"
+   },
    "links": {
-    "ticket": "https://ishiuchi.or.jp/winter/price/ic-tiket/"
+    "ticket": "https://ishiuchi.or.jp/winter/price/"
    }
   },
   {
@@ -5084,6 +5178,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 24,
     "lifts": 6
+   },
+   "ticket": {
+    "jpy": 5300,
+    "season": "2026-27 當日券",
+    "label": "成人一日券",
+    "source": "https://www.kamui-skilinks.com/guide/",
+    "as_of": "2026-11-10",
+    "note": "成人欄。另收可退的卡費 500 円。"
+   },
+   "links": {
+    "ticket": "https://www.kamui-skilinks.com/guide/"
    }
   },
   {
@@ -5159,7 +5264,8 @@
     "lifts": 6
    },
    "links": {
-    "ticket": "https://www.kandatsu.com/price/"
+    "ticket": "https://www.kandatsu.com/price/",
+    "status": "https://www.kandatsu.com/today/"
    }
   },
   {
@@ -5474,6 +5580,14 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 24,
     "lifts": 10
+   },
+   "ticket": {
+    "jpy": 9200,
+    "season": "2026/12/12–2027/4/11 旺季",
+    "label": "成人一日券",
+    "source": "https://www.kiroro.co.jp/ja/lift_price/",
+    "as_of": "2026-11-10",
+    "note": "成人。初滑與春雪是 5,800 円。"
    },
    "links": {
     "ticket": "https://www.kiroro.co.jp/ja/lift_price/",
@@ -6302,6 +6416,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 31,
     "lifts": 9
+   },
+   "ticket": {
+    "jpy": 9000,
+    "season": "官網マウンテンパス（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.madarao.jp/ski/price",
+    "as_of": "2026-11-10",
+    "note": "中學生以上。這張含坦格拉姆全部纜車，不是斑尾單區。"
+   },
+   "links": {
+    "ticket": "https://www.madarao.jp/ski/price"
    }
   },
   {
@@ -6334,6 +6459,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 6,
     "lifts": 10
+   },
+   "ticket": {
+    "jpy": 7300,
+    "season": "官網 1 day（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.maiko-resort.com/winter/lift.html",
+    "as_of": "2026-11-10",
+    "note": "開場到關場。"
+   },
+   "links": {
+    "ticket": "https://www.maiko-resort.com/winter/lift.html"
    }
   },
   {
@@ -6473,8 +6609,17 @@
     "courses": 17,
     "lifts": 8
    },
+   "ticket": {
+    "jpy": 6700,
+    "season": "2026/12/19 起 土日祝尖峰",
+    "label": "成人一日券",
+    "source": "https://www.marunuma.jp/winter/ticket/",
+    "as_of": "2026-11-10",
+    "note": "平日尖峰是 6,000 円。初滑一日券是 5,200 円。"
+   },
    "links": {
-    "ticket": "https://www.marunuma.jp/winter/ticket/"
+    "ticket": "https://www.marunuma.jp/winter/ticket/",
+    "status": "https://www.marunuma.jp/winter/status/"
    }
   },
   {
@@ -7552,7 +7697,7 @@
    ],
    "roma": "suki naeba",
    "osm": "way/952129313",
-   "web": "https://www.princehotels.co.jp/ski/winter/",
+   "web": "https://www.princehotels.co.jp/ski/naeba/winter/",
    "amedas": {
     "id": "54841",
     "ja": "湯沢",
@@ -7567,6 +7712,18 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 24,
     "lifts": 14
+   },
+   "ticket": {
+    "jpy": 9800,
+    "season": "2026/12/18–2027/4/4 苗場區",
+    "label": "成人一日券",
+    "source": "https://www.princehotels.co.jp/ski/naeba/winter/lift/",
+    "as_of": "2026-11-10",
+    "note": "苗場區一日券。含神樂的 Mt.Naeba 共通券是 11,800 円。"
+   },
+   "links": {
+    "ticket": "https://www.princehotels.co.jp/ski/naeba/winter/lift/",
+    "status": "https://www.princehotels.co.jp/ski/naeba/winter/coursemap/"
    }
   },
   {
@@ -8032,12 +8189,11 @@
     "ele": 39
    },
    "size": {
-    "piste_km": 17.6,
+    "piste_km": 6.9,
     "source": "OpenStreetMap",
     "as_of": "2026-11-10",
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
-    "courses": 13,
-    "lifts": 6
+    "lifts": 3
    }
   },
   {
@@ -8050,17 +8206,17 @@
    "lat": 42.86554,
    "lon": 140.67434,
    "aliases": [
-    "二世古",
-    "比羅夫",
-    "Hirafu",
-    "Grand Hirafu",
-    "安努普利",
     "Annupuri",
-    "花園",
+    "Grand Hirafu",
     "Hanazono",
-    "二世谷村",
+    "Hirafu",
     "Niseko Village",
-    "東急"
+    "二世古",
+    "二世谷村",
+    "安努普利",
+    "東急",
+    "比羅夫",
+    "花園"
    ],
    "roma": "hirafugrandhirafuannupurihanazononisekovillage nisekoyunaiteddo",
    "osm": "relation/14756845",
@@ -8074,12 +8230,12 @@
     "ele": 176
    },
    "size": {
-    "piste_km": 84.9,
+    "piste_km": 28.7,
     "source": "OpenStreetMap",
     "as_of": "2026-11-10",
-    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
-    "courses": 80,
-    "lifts": 26
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。比羅夫、花園、二世谷村、安努普利已分開計算，這筆是中間剩下、較靠近全山中心的雪道。",
+    "courses": 33,
+    "lifts": 11
    },
    "ticket": {
     "jpy": 13500,
@@ -9690,6 +9846,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 14,
     "lifts": 4
+   },
+   "ticket": {
+    "jpy": 7000,
+    "season": "2026/11/20–2027/3/31 通常",
+    "label": "成人一日券",
+    "source": "https://www.sapporo-kokusai.jp/price/",
+    "as_of": "2026-11-10",
+    "note": "一般窗口。網頁上的線上價是 6,700 円。"
+   },
+   "links": {
+    "ticket": "https://www.sapporo-kokusai.jp/price/"
    }
   },
   {
@@ -10442,7 +10609,8 @@
     "lifts": 5
    },
    "links": {
-    "ticket": "https://www.princehotels.co.jp/ski/shiga/winter/lift/"
+    "ticket": "https://www.princehotels.co.jp/ski/shiga/winter/lift/",
+    "status": "https://www.princehotels.co.jp/ski/shiga/winter/coursemap/"
    }
   },
   {
@@ -11109,6 +11277,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 4,
     "lifts": 3
+   },
+   "ticket": {
+    "jpy": 5300,
+    "season": "土日祝（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.yeti-resort.com/service/",
+    "as_of": "2026-11-10",
+    "note": "平日是 4,300 円。有效到 22:00。"
+   },
+   "links": {
+    "ticket": "https://www.yeti-resort.com/service/"
    }
   },
   {
@@ -11754,6 +11933,7 @@
     "dist": 9.0,
     "ele": 430
    },
+   "web": "https://www.takasu.gr.jp/",
    "size": {
     "piste_km": 16.9,
     "source": "OpenStreetMap",
@@ -11761,6 +11941,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 13,
     "lifts": 4
+   },
+   "ticket": {
+    "jpy": 6400,
+    "season": "全日（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.takasu.gr.jp/charge/",
+    "as_of": "2026-11-10"
+   },
+   "links": {
+    "ticket": "https://www.takasu.gr.jp/charge/",
+    "status": "https://www.takasu.gr.jp/condition/"
    }
   },
   {
@@ -11928,6 +12119,14 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 20,
     "lifts": 5
+   },
+   "ticket": {
+    "jpy": 7000,
+    "season": "官網專用一日券（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://www.tangram.jp/ski/ticket/ticket.php",
+    "as_of": "2026-11-10",
+    "note": "坦格拉姆專用。與斑尾共通的マウンテンパス是 9,000 円。"
    },
    "links": {
     "ticket": "https://www.tangram.jp/ski/ticket/ticket.php"
@@ -12459,6 +12658,7 @@
     "dist": 6.4,
     "ele": 703
    },
+   "web": "https://www.tsugaike.gr.jp/",
    "size": {
     "piste_km": 34.3,
     "source": "OpenStreetMap",
@@ -12466,6 +12666,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 12,
     "lifts": 15
+   },
+   "ticket": {
+    "jpy": 9800,
+    "season": "2026/12/1 起通常",
+    "label": "成人一日券",
+    "source": "https://www.tsugaike.gr.jp/snow/price",
+    "as_of": "2026-11-10",
+    "note": "對照早割的通常售價。早割一日券是 6,500 円。"
+   },
+   "links": {
+    "ticket": "https://www.tsugaike.gr.jp/snow/price"
    }
   },
   {
@@ -12806,6 +13017,17 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 6,
     "lifts": 4
+   },
+   "ticket": {
+    "jpy": 5900,
+    "season": "官網一日券 8:00–16:30（2026-11-10 查看）",
+    "label": "成人一日券",
+    "source": "https://ski.washigatake.jp/charge/",
+    "as_of": "2026-11-10"
+   },
+   "links": {
+    "ticket": "https://ski.washigatake.jp/charge/",
+    "status": "https://ski.washigatake.jp/condition/"
    }
   },
   {
@@ -13753,6 +13975,9 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 17,
     "lifts": 36
+   },
+   "links": {
+    "status": "https://zaomountainresort.com/ropeway-lift-information/"
    }
   },
   {
@@ -13782,6 +14007,159 @@
     "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
     "courses": 6,
     "lifts": 2
+   }
+  },
+  {
+   "id": "niseko-hirafu",
+   "zh": "二世谷比羅夫",
+   "ja": "ニセコ東急グラン・ヒラフ",
+   "en": "Niseko Grand Hirafu",
+   "pref": "北海道",
+   "region": "hokkaido",
+   "lat": 42.8619,
+   "lon": 140.69854,
+   "aliases": [
+    "比羅夫",
+    "グランヒラフ",
+    "Hirafu",
+    "Grand Hirafu"
+   ],
+   "roma": "niseko tokyu grand hirafu",
+   "note": "二世谷全山的比羅夫區。座標是 OpenStreetMap 的售票處。",
+   "web": "https://www.niseko.ne.jp/ja/",
+   "size": {
+    "piste_km": 17.1,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 13,
+    "lifts": 6
+   },
+   "ticket": {
+    "jpy": 13500,
+    "season": "2026-27 旺季（12/24–2/28）全山共通",
+    "label": "成人一日券",
+    "source": "https://www.niseko.ne.jp/ja/lift/",
+    "as_of": "2026-11-10",
+    "note": "比羅夫用二世谷全山共通券。通常期 12,600 円。"
+   },
+   "links": {
+    "ticket": "https://www.niseko.ne.jp/ja/lift/",
+    "status": "https://www.niseko.ne.jp/ja/niseko-lift-status/"
+   }
+  },
+  {
+   "id": "niseko-hanazono",
+   "zh": "二世谷花園",
+   "ja": "ニセコHANAZONOリゾート",
+   "en": "Niseko Hanazono",
+   "pref": "北海道",
+   "region": "hokkaido",
+   "lat": 42.88117,
+   "lon": 140.68152,
+   "aliases": [
+    "花園",
+    "ハナゾノ",
+    "Hanazono"
+   ],
+   "roma": "niseko hanazono",
+   "note": "座標是 OpenStreetMap 上花園纜車的中心。",
+   "web": "https://hanazononiseko.com/ja",
+   "size": {
+    "piste_km": 26.8,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 14,
+    "lifts": 4
+   },
+   "ticket": {
+    "jpy": 13500,
+    "season": "2026-27 旺季（12/24–2/28）全山共通",
+    "label": "成人一日券",
+    "source": "https://www.niseko.ne.jp/ja/lift/",
+    "as_of": "2026-11-10",
+    "note": "花園用二世谷全山共通券。通常期 12,600 円。"
+   },
+   "links": {
+    "ticket": "https://www.niseko.ne.jp/ja/lift/",
+    "status": "https://www.niseko.ne.jp/ja/niseko-lift-status/"
+   }
+  },
+  {
+   "id": "niseko-village",
+   "zh": "二世谷村",
+   "ja": "ニセコビレッジ",
+   "en": "Niseko Village",
+   "pref": "北海道",
+   "region": "hokkaido",
+   "lat": 42.84642,
+   "lon": 140.68044,
+   "aliases": [
+    "二世谷村",
+    "ビレッジ",
+    "Village"
+   ],
+   "roma": "niseko village",
+   "note": "座標是 OpenStreetMap 的比羅夫村快速纜車。",
+   "web": "https://www.niseko-village.com/",
+   "size": {
+    "piste_km": 11.9,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 22,
+    "lifts": 6
+   },
+   "ticket": {
+    "jpy": 13500,
+    "season": "2026-27 旺季（12/24–2/28）全山共通",
+    "label": "成人一日券",
+    "source": "https://www.niseko.ne.jp/ja/lift/",
+    "as_of": "2026-11-10",
+    "note": "二世谷村用全山共通券。通常期 12,600 円。"
+   },
+   "links": {
+    "ticket": "https://www.niseko.ne.jp/ja/lift/",
+    "status": "https://www.niseko.ne.jp/ja/niseko-lift-status/"
+   }
+  },
+  {
+   "id": "niseko-annupuri",
+   "zh": "二世谷安努普利",
+   "ja": "ニセコアンヌプリ",
+   "en": "Niseko Annupuri",
+   "pref": "北海道",
+   "region": "hokkaido",
+   "lat": 42.85005,
+   "lon": 140.64945,
+   "aliases": [
+    "安努普利",
+    "アンヌプリ",
+    "Annupuri"
+   ],
+   "roma": "niseko annupuri",
+   "note": "座標是 OpenStreetMap 的安努普利滑雪場節點。單區券和全山券不同。",
+   "web": "https://annupuri.info/",
+   "size": {
+    "piste_km": 13.7,
+    "source": "OpenStreetMap",
+    "as_of": "2026-11-10",
+    "note": "OpenStreetMap 已繪製的 downhill 雪道長度，不是雪場公布的數字，沒畫到的不算。",
+    "courses": 16,
+    "lifts": 4
+   },
+   "ticket": {
+    "jpy": 7800,
+    "season": "2026/12/24–2027/2/28 旺季",
+    "label": "成人一日券",
+    "source": "https://annupuri.info/lift-tickets/",
+    "as_of": "2026-11-10",
+    "note": "安努普利單區券，不是全山共通券。"
+   },
+   "links": {
+    "ticket": "https://annupuri.info/lift-tickets/",
+    "status": "https://www.niseko.ne.jp/ja/niseko-lift-status/"
    }
   }
  ]
