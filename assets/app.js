@@ -1,4 +1,4 @@
-const APP_VERSION = "1.1.2";
+const APP_VERSION = "1.1.3";
 const FKEY = "jp-snow-favs";
 const SKIP_KEY = "jp-snow-skip-version";
 const CHECK_MS = 15 * 60 * 1000;
@@ -135,6 +135,7 @@ function tempText(value) {
   return body + "°";
 }
 function kindText(kind) {
+  if (kind === "resort") return "雪場實測";
   return kind === "obs" ? "實測" : "估計";
 }
 function wxText(code) {
@@ -432,7 +433,7 @@ function renderDetail() {
   unit.textContent = "cm";
   depth.append(unit);
   const badge = document.createElement("span");
-  badge.className = "kind " + (row.depth_kind === "obs" ? "obs" : "est");
+  badge.className = "kind " + (row.depth_kind === "est" ? "est" : "obs");
   badge.textContent = kindText(row.depth_kind || "est");
   const explain = document.createElement("p");
   explain.className = "explain";
@@ -550,6 +551,12 @@ function cell(value, label) {
 }
 function depthExplain(row) {
   const ele = row.ele != null ? `格點標高約 ${row.ele} 公尺。` : "";
+  if (row.depth_kind === "resort" && row.rep) {
+    const parts = [];
+    if (row.rep.summit != null) parts.push(`山頂 ${cm(row.rep.summit)} cm`);
+    if (row.rep.base != null) parts.push(`山麓 ${cm(row.rep.base)} cm`);
+    return `雪場官方自報的雪況（${parts.join("／") || "數值見官網"}），以雪場官網更新時間為準。`;
+  }
   if (row.depth_kind === "obs" && row.obs) {
     return `氣象廳測站「${row.obs.zh}」的積雪實測，直線距離 ${row.obs.dist} 公里、測站標高 ${row.obs.ele} 公尺。${ele}`;
   }
@@ -708,7 +715,7 @@ function renderChrome() {
   p1.textContent = updated ? `雪況更新於 ${formatStamp(updated)}。` : "";
   const p2 = document.createElement("p");
   p2.append(
-    document.createTextNode("積雪若標示實測，是氣象廳 AMeDAS 鄰近測站的觀測，並依距離與標高篩過；其餘積雪、新雪和預報是 "),
+    document.createTextNode("積雪若標示雪場實測，是直接抓該雪場官網運行情報頁自報的雪況；標示實測則是氣象廳 AMeDAS 鄰近測站的觀測，並依距離與標高篩過；其餘積雪、新雪和預報是 "),
     link("https://open-meteo.com/", "Open-Meteo"),
     document.createTextNode(" 天氣模式的估計（CC BY 4.0）。雪場位置 © "),
     link("https://www.openstreetmap.org/copyright", "OpenStreetMap"),

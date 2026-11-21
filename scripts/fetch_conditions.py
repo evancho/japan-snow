@@ -287,6 +287,32 @@ def main() -> None:
     if coverage < 0.9:
         raise SystemExit("not enough resorts updated; leaving the previous file in place")
 
+    # Resort-reported snow depth from official status pages. When a resort
+    # publishes its own slope measurement it beats valley AMeDAS/model values.
+    reported_ok = 0
+    try:
+        from reported_snow import STATUS_PAGES, fetch_reported
+
+        raw_pages = {}
+        for rid, page_url in STATUS_PAGES.items():
+            try:
+                raw_pages[rid] = get_bytes(page_url, timeout=60).decode("utf-8", "ignore")
+            except Exception as exc:  # noqa: BLE001
+                print(f"reported fetch failed {rid}: {exc}", flush=True)
+        for rid, (summit, base) in fetch_reported(raw_pages).items():
+            item = by_id.get(rid)
+            if not item:
+                continue
+            item["rep"] = {"summit": summit, "base": base}
+            best = max(summit or 0, base or 0)
+            if best > 0:
+                item["depth"] = best
+                item["depth_kind"] = "resort"
+                reported_ok += 1
+    except Exception as exc:  # noqa: BLE001
+        print(f"reported snow step skipped: {exc}", flush=True)
+    print(f"resort-reported depth applied to {reported_ok} resorts", flush=True)
+
     payload = {
         "updated": datetime.now(JST).isoformat(timespec="seconds"),
         "timezone": "Asia/Tokyo",
@@ -294,6 +320,7 @@ def main() -> None:
         "sources": {
             "model": "Open-Meteo",
             "obs": "JMA AMeDAS",
+            "resort": "ski resort official status pages",
         },
         "resorts": by_id,
     }
