@@ -67,7 +67,7 @@ for rid, row in cond_rows.items():
         numeric += 1
         if not -45 <= temp <= 35 or not 0 <= depth <= 900:
             errors.append(f"{rid} out of range temp={temp} depth={depth}")
-    if row.get("depth_kind") not in ("obs", "est"):
+    if row.get("depth_kind") not in ("obs", "est", "resort"):
         errors.append(f"{rid} bad depth_kind")
 if numeric < len(resorts) * 0.9:
     errors.append(f"only {numeric} resorts have depth and temperature")
