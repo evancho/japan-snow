@@ -58,8 +58,14 @@ def _parse_kiroro(html: str):
 
 
 def _parse_teine(html: str):
-    peak = re.search(r"(?:(\d{1,4})\s*cm)[\s\S]{0,120}?(?:Peak-depth|山頂積雪)", html)
-    base = re.search(r"(?:(\d{1,4})\s*cm)[\s\S]{0,120}?(?:Base-depth|山麓積雪)", html)
+    # 2026-11 官網改版：積雪區塊變成「標籤在前、數字在後」
+    # （山頂積雪 Peak-depth 25cm / 山麓積雪 Base-depth 0cm），
+    # 舊寫法抓標籤「前面」的數字，會撈到 24h 降雪當山頂。改在文字層抓標籤後的數字。
+    text = re.sub(r"<!--[\s\S]*?-->", " ", html)
+    text = re.sub(r"<[^>]+>", " ", unescape(text))
+    text = re.sub(r"\s+", " ", text)
+    peak = re.search(r"(?:Peak-depth|山頂積雪)[^0-9]{0,40}?(\d{1,4})\s*cm", text)
+    base = re.search(r"(?:Base-depth|山麓積雪)[^0-9]{0,40}?(\d{1,4})\s*cm", text)
     if not peak and not base:
         return None
     return (
